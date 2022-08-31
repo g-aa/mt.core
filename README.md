@@ -1,4 +1,4 @@
-# Mt Utilities
+# <p><img src="iconMt.png" width="64px" height="64px" align="middle"/> Mt Utilities</p>
 
 Универсальные утилиты используемые в проектах Mt Rele.
 
