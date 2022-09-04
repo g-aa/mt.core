@@ -18,7 +18,7 @@
 		<PackageTags>Mt;Net;Utilities;</PackageTags>
 		<PackageProjectUrl>https://github.com/g-aa/mt-utilities</PackageProjectUrl>
 		<PackageId>Mt.Utilities</PackageId>
-		<Build_Version Condition=" '$(Build_Version)' == '' ">6.0.0</Build_Version>
+		<Build_Version Condition=" '$(Build_Version)' == '' ">6.0.1</Build_Version>
 		<Build_Number Condition=" '$(Build_Number)' == '' ">$(Build_Version).0</Build_Number>
 		<Version>$(Build_Version)</Version>
 		<PackageVersion>$(Build_Version)</PackageVersion>
