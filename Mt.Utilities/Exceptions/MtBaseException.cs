@@ -1,9 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 using System.Runtime.Serialization;
 using System.Security.Permissions;
-using System.Text;
 
 namespace Mt.Utilities.Exceptions
 {
@@ -49,7 +47,6 @@ namespace Mt.Utilities.Exceptions
         public MtBaseException(string title, string message)
             : this(null, title, message)
         {
-
         }
 
         /// <summary>
@@ -59,7 +56,6 @@ namespace Mt.Utilities.Exceptions
         public MtBaseException(string title)
             : this(null, title, null)
         {
-
         }
 
         /// <inheritdoc />
