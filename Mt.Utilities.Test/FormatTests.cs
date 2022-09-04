@@ -29,7 +29,7 @@ namespace Mt.Utilities.Test
         [TestCase("БМРЗ-ТР")]
         public void AnalogModulePositiveTest(string module)
         {
-            Assert.That(Regex.IsMatch(module, Format.AnalogModule, RegexOptions.IgnoreCase, new TimeSpan(1000)), Is.True);
+            Assert.That(Regex.IsMatch(module, StringFormat.AnalogModule, RegexOptions.IgnoreCase, new TimeSpan(1000)), Is.True);
         }
 
         /// <summary>
@@ -41,7 +41,7 @@ namespace Mt.Utilities.Test
         [TestCase("ДИВГ.99999-99")]
         public void DivgPositiveTest(string divg)
         {
-            Assert.That(Regex.IsMatch(divg, Format.DIVG, RegexOptions.IgnoreCase, new TimeSpan(1000)), Is.True);
+            Assert.That(Regex.IsMatch(divg, StringFormat.DIVG, RegexOptions.IgnoreCase, new TimeSpan(1000)), Is.True);
         }
 
         /// <summary>
@@ -53,7 +53,7 @@ namespace Mt.Utilities.Test
         [TestCase("9A")]
         public void CurrentPositiveTest(string current)
         {
-            Assert.That(Regex.IsMatch(current, Format.Current, RegexOptions.IgnoreCase, new TimeSpan(1000)), Is.True);
+            Assert.That(Regex.IsMatch(current, StringFormat.Current, RegexOptions.IgnoreCase, new TimeSpan(1000)), Is.True);
         }
 
         /// <summary>
@@ -65,7 +65,7 @@ namespace Mt.Utilities.Test
         [TestCase("9V")]
         public void VoltagePositiveTest(string voltage)
         {
-            Assert.That(Regex.IsMatch(voltage, Format.Voltage, RegexOptions.IgnoreCase, new TimeSpan(1000)), Is.True);
+            Assert.That(Regex.IsMatch(voltage, StringFormat.Voltage, RegexOptions.IgnoreCase, new TimeSpan(1000)), Is.True);
         }
 
         /// <summary>
@@ -77,7 +77,7 @@ namespace Mt.Utilities.Test
         [TestCase("v9.99.99.99")]
         public void VersionPositiveTest(string version)
         {
-            Assert.That(Regex.IsMatch(version, Format.Version, RegexOptions.IgnoreCase, new TimeSpan(1000)), Is.True);
+            Assert.That(Regex.IsMatch(version, StringFormat.Version, RegexOptions.IgnoreCase, new TimeSpan(1000)), Is.True);
         }
 
         /// <summary>
@@ -93,7 +93,7 @@ namespace Mt.Utilities.Test
         [TestCase("БМРЗ-M4М")]
         public void PlatformPositiveTest(string platform)
         {
-            Assert.That(Regex.IsMatch(platform, Format.Platform, RegexOptions.IgnoreCase, new TimeSpan(1000)), Is.True);
+            Assert.That(Regex.IsMatch(platform, StringFormat.Platform, RegexOptions.IgnoreCase, new TimeSpan(1000)), Is.True);
         }
 
         /// <summary>
@@ -106,7 +106,7 @@ namespace Mt.Utilities.Test
         [TestCase("БФПО-999")]
         public void PrefixPositiveTest(string prefix)
         {
-            Assert.That(Regex.IsMatch(prefix, Format.Prefix, RegexOptions.IgnoreCase, new TimeSpan(1000)), Is.True);
+            Assert.That(Regex.IsMatch(prefix, StringFormat.Prefix, RegexOptions.IgnoreCase, new TimeSpan(1000)), Is.True);
         }
 
         /// <summary>
@@ -119,7 +119,7 @@ namespace Mt.Utilities.Test
         [TestCase("ПМК-04ВВ-00_00")]
         public void PmkPositiveTest(string pmk)
         {
-            Assert.That(Regex.IsMatch(pmk, Format.PMK, RegexOptions.IgnoreCase, new TimeSpan(1000)), Is.True);
+            Assert.That(Regex.IsMatch(pmk, StringFormat.PMK, RegexOptions.IgnoreCase, new TimeSpan(1000)), Is.True);
         }
 
         /// <summary>
@@ -132,7 +132,7 @@ namespace Mt.Utilities.Test
         [TestCase("БФПО-04ВВ-00_00")]
         public void BfpoPmkPositiveTest(string bfpo)
         {
-            Assert.That(Regex.IsMatch(bfpo, Format.BFPO, RegexOptions.IgnoreCase, new TimeSpan(1000)), Is.True);
+            Assert.That(Regex.IsMatch(bfpo, StringFormat.BFPO, RegexOptions.IgnoreCase, new TimeSpan(1000)), Is.True);
         }
     }
 }

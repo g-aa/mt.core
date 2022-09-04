@@ -3,7 +3,7 @@
     /// <summary>
     /// Форматы регулярных выражений основных сущностей в МТ.
     /// </summary>
-    public static class Format
+    public static class StringFormat
     {
         /// <summary>
         /// Формат регулярного выражения для аналоговых модулей (БМРЗ-150, БМРЗ-М4).

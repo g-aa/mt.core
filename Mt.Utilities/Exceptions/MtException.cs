@@ -1,9 +1,7 @@
 ﻿using Mt.Utilities.Extensions;
 using System;
-using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 using System.Runtime.Serialization;
-using System.Text;
 
 namespace Mt.Utilities.Exceptions
 {
@@ -38,7 +36,6 @@ namespace Mt.Utilities.Exceptions
         public MtException(ErrorCode code, string message)
             : this(null, code, message)
         {
-
         }
 
         /// <summary>
@@ -48,14 +45,12 @@ namespace Mt.Utilities.Exceptions
         public MtException(ErrorCode code)
             : this(null, code, null)
         {
-
         }
 
         /// <inheritdoc />
         protected MtException([NotNull] SerializationInfo info, StreamingContext context)
             : base(info, context)
         {
-
         }
     }
 }
