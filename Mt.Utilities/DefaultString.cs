@@ -104,5 +104,10 @@
         /// Значение по умолчанию для наименования проекта (БФПО).
         /// </summary>
         public static readonly string Project = "ПМК";
+
+        /// <summary>
+        /// Значение по умолчанию для наименования текстовых файлов (empty.txt).
+        /// </summary>
+        public static readonly string TextFileName = "empty.txt";
     }
 }

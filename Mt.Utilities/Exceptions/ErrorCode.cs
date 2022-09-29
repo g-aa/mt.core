@@ -3,30 +3,56 @@
     /// <summary>
     /// Код ошибки МТ.
     /// </summary>
-    public enum ErrorCode : uint
+    public enum ErrorCode
     {
+        #region [ System errors in logic (0...9) ]
+
         /// <summary>
-        /// Внутренняя ошибка сервера.
+        /// Внутренняя ошибка логики приложения.
         /// </summary>
-        [ErrorCodeDescription("Внутренняя ошибка сервера.", 500)]
-        InternalServerError = 0,
+        [ErrorCodeDescription("Внутренняя ошибка логики приложения.", 500)]
+        InternalLogic = 0,
 
         /// <summary>
         /// Ошибка выполнения операции.
         /// </summary>
         [ErrorCodeDescription("Ошибка выполнения операции.", 400)]
-        InvalidOperationError = 1,
+        InvalidOperation = 1,
+
+        #endregion
+
+        #region [ Entity errors (10...19) ]
 
         /// <summary>
-        /// Ошибка валидации параметров.
+        /// Ошибка валидации параметров сущности.
         /// </summary>
-        [ErrorCodeDescription("Ошибка валидации параметров.", 400)]
-        ValidationError = 2,
+        [ErrorCodeDescription("Ошибка валидации параметров сущности.", 400)]
+        EntityValidation = 10,
 
         /// <summary>
         /// Ошибка поиска сущности в последовательности.
         /// </summary>
-        [ErrorCodeDescription("Ошибка поиска сущности в последовательности.", 400)]
-        EntityNotFoundError = 3,
+        [ErrorCodeDescription("Сущность не найдена в последовательности.", 400)]
+        EntityNotFound = 11,
+
+        /// <summary>
+        /// Ошибка добавления сущности в последовательности.
+        /// </summary>
+        [ErrorCodeDescription("Сущность уже содержится в последовательности.", 400)]
+        EntityAlreadyExists = 12,
+
+        /// <summary>
+        /// Ошибка удаления сущности из последовательности.
+        /// </summary>
+        [ErrorCodeDescription("Сущность не может быть удалена из последовательности.", 400)]
+        EntityCannotBeDeleted = 13,
+
+        /// <summary>
+        /// Ошибка модификации сущности в последовательности.
+        /// </summary>
+        [ErrorCodeDescription("Сущность не может быть модифицирована.", 400)]
+        EntityCannotBeModified = 14,
+
+        #endregion
     }
 }

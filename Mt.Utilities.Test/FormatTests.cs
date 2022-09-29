@@ -11,15 +11,6 @@ namespace Mt.Utilities.Test
     public sealed class FormatTests
     {
         /// <summary>
-        /// Настройки.
-        /// </summary>
-        [SetUp]
-        public void Setup()
-        {
-
-        }
-
-        /// <summary>
         /// Положительные тесты для аналогового модуля.
         /// </summary>
         /// <param name="module">Модуль.</param>

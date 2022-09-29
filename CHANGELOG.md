@@ -6,6 +6,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [6.1.0] - 2022-09-18
+### Добавлено
+- MT-0006: Добавление пакета SonarAnalyzer.CSharp в проект;
+- MT-0006: Добавление mt-utilities.snk;
+- MT-0006: Добавление Directory.Build.props;
+- MT-0006: Добавление в проект ZipFileModel;
+
+### Изменено
+- MT-0006: Обновление и дополнение кодов ошибок;
+- MT-0006: Обнавление Unit-тестов;
+
+### Удалено
+- -//-
+
 ## [6.0.1] - 2022-09-04
 ### Добавлено
 - MT-0004: Добавление файла CHANGELOG.md;
@@ -33,4 +47,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - -//-
 
 [Unreleased]: https://github.com/g-aa/mt-utilities/tree/develop
-[6.0.1]: https://github.com/g-aa/mt-utilities/tree/main
+[6.1.0]: https://github.com/g-aa/mt-utilities/tree/main

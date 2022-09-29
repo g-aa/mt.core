@@ -11,15 +11,6 @@ namespace Mt.Utilities.Test
     public sealed class CheckTests
     {
         /// <summary>
-        /// Настройки.
-        /// </summary>
-        [SetUp]
-        public void Setup()
-        {
-
-        }
-
-        /// <summary>
         /// Положительные тесты для проверки строки.
         /// </summary>
         /// <param name="value">Строка.</param>
