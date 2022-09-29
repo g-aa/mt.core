@@ -20,16 +20,16 @@ namespace Mt.Utilities.IO
         public byte[] Bytes { get; private set; }
 
         /// <summary>
-        /// Конструктор по умолчание.
+        /// Инициализация экземпляра класса <see cref="FileModel"/>.
         /// </summary>
         protected FileModel()
         {
-            this.Title = "empty.txt";
+            this.Title = DefaultString.TextFileName;
             this.Bytes =  Array.Empty<byte>();
         }
 
         /// <summary>
-        /// Конструктор с параметрами.
+        /// Инициализация экземпляра класса <see cref="FileModel"/>.
         /// </summary>
         /// <param name="title">Наименование файла.</param>
         /// <param name="bytes">Данные файла в бинарном формате.</param>
