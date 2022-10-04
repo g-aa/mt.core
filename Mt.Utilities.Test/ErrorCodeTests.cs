@@ -16,8 +16,10 @@ namespace Mt.Utilities.Test
         /// <param name="code">Код ошибки.</param>
         /// <param name="expected">Ожидаемый результат.</param>
         [Test]
-        [TestCase(ErrorCode.InternalLogic,          "MT-E0000")]
-        [TestCase(ErrorCode.InvalidOperation,       "MT-E0001")]
+        [TestCase(ErrorCode.InternalServerError,    "MT-E0000")]
+        [TestCase(ErrorCode.InternalLogic,          "MT-E0001")]
+        [TestCase(ErrorCode.InvalidOperation,       "MT-E0002")]
+        [TestCase(ErrorCode.Unauthorized,           "MT-E0003")]
         [TestCase(ErrorCode.EntityValidation,       "MT-E0010")]
         [TestCase(ErrorCode.EntityNotFound,         "MT-E0011")]
         [TestCase(ErrorCode.EntityAlreadyExists,    "MT-E0012")]
@@ -35,8 +37,10 @@ namespace Mt.Utilities.Test
         /// <param name="code">Код ошибки.</param>
         /// <param name="expected">Ожидаемый результат.</param>
         [Test]
+        [TestCase(ErrorCode.InternalServerError,    "Внутренняя ошибка сервера.")]
         [TestCase(ErrorCode.InternalLogic,          "Внутренняя ошибка логики приложения.")]
         [TestCase(ErrorCode.InvalidOperation,       "Ошибка выполнения операции.")]
+        [TestCase(ErrorCode.Unauthorized,           "Несанкционированный доступ к ресурсу.")]
         [TestCase(ErrorCode.EntityValidation,       "Ошибка валидации параметров сущности.")]
         [TestCase(ErrorCode.EntityNotFound,         "Сущность не найдена в последовательности.")]
         [TestCase(ErrorCode.EntityAlreadyExists,    "Сущность уже содержится в последовательности.")]
@@ -54,8 +58,10 @@ namespace Mt.Utilities.Test
         /// <param name="code">Код ошибки.</param>
         /// <param name="expected">Ожидаемый результат.</param>
         [Test]
-        [TestCase(ErrorCode.InternalLogic,          500)]
+        [TestCase(ErrorCode.InternalServerError,    500)]
+        [TestCase(ErrorCode.InternalLogic,          400)]
         [TestCase(ErrorCode.InvalidOperation,       400)]
+        [TestCase(ErrorCode.Unauthorized,           401)]
         [TestCase(ErrorCode.EntityValidation,       400)]
         [TestCase(ErrorCode.EntityNotFound,         400)]
         [TestCase(ErrorCode.EntityAlreadyExists,    400)]

@@ -8,16 +8,28 @@
         #region [ System errors in logic (0...9) ]
 
         /// <summary>
+        /// Внутренняя ошибка сервера.
+        /// </summary>
+        [ErrorCodeDescription("Внутренняя ошибка сервера.", 500)]
+        InternalServerError = 0,
+
+        /// <summary>
         /// Внутренняя ошибка логики приложения.
         /// </summary>
-        [ErrorCodeDescription("Внутренняя ошибка логики приложения.", 500)]
-        InternalLogic = 0,
+        [ErrorCodeDescription("Внутренняя ошибка логики приложения.", 400)]
+        InternalLogic = 1,
 
         /// <summary>
         /// Ошибка выполнения операции.
         /// </summary>
         [ErrorCodeDescription("Ошибка выполнения операции.", 400)]
-        InvalidOperation = 1,
+        InvalidOperation = 2,
+
+        /// <summary>
+        /// Несанкционированный доступ к ресурсу.
+        /// </summary>
+        [ErrorCodeDescription("Несанкционированный доступ к ресурсу.", 401)]
+        Unauthorized = 3,
 
         #endregion
 

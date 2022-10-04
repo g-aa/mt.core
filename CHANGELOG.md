@@ -6,6 +6,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [6.1.1] - 2022-10-04
+### Добавлено
+- -//-
+
+### Изменено
+- MT-0007: Обновление и дополнение кодов ошибок;
+- MT-0007: Обнавление Unit-тестов;
+- MT-0007: Обновление пакетов;
+
+### Удалено
+- -//-
+
 ## [6.1.0] - 2022-09-18
 ### Добавлено
 - MT-0006: Добавление пакета SonarAnalyzer.CSharp в проект;
@@ -47,4 +59,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - -//-
 
 [Unreleased]: https://github.com/g-aa/mt-utilities/tree/develop
-[6.1.0]: https://github.com/g-aa/mt-utilities/tree/main
+[6.1.1]: https://github.com/g-aa/mt-utilities/tree/main
