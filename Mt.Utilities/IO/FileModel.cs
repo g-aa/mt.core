@@ -12,12 +12,12 @@ namespace Mt.Utilities.IO
         /// <summary>
         /// Наименование файла.
         /// </summary>
-        public string Title { get; private set; }
+        public string Title { get; protected set; }
         
         /// <summary>
         /// Данные файла в бинарном формате.
         /// </summary>
-        public byte[] Bytes { get; private set; }
+        public byte[] Bytes { get; protected set; }
 
         /// <summary>
         /// Инициализация экземпляра класса <see cref="FileModel"/>.
