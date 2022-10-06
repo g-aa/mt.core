@@ -17,7 +17,7 @@
         /// Внутренняя ошибка логики приложения.
         /// </summary>
         [ErrorCodeDescription("Внутренняя ошибка логики приложения.", 400)]
-        InternalLogic = 1,
+        InternalLogicError = 1,
 
         /// <summary>
         /// Ошибка выполнения операции.

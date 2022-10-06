@@ -17,7 +17,7 @@ namespace Mt.Utilities.Test
         /// <param name="expected">ќжидаемый результат.</param>
         [Test]
         [TestCase(ErrorCode.InternalServerError,    "MT-E0000")]
-        [TestCase(ErrorCode.InternalLogic,          "MT-E0001")]
+        [TestCase(ErrorCode.InternalLogicError,     "MT-E0001")]
         [TestCase(ErrorCode.InvalidOperation,       "MT-E0002")]
         [TestCase(ErrorCode.Unauthorized,           "MT-E0003")]
         [TestCase(ErrorCode.EntityValidation,       "MT-E0010")]
@@ -38,7 +38,7 @@ namespace Mt.Utilities.Test
         /// <param name="expected">ќжидаемый результат.</param>
         [Test]
         [TestCase(ErrorCode.InternalServerError,    "¬нутренн€€ ошибка сервера.")]
-        [TestCase(ErrorCode.InternalLogic,          "¬нутренн€€ ошибка логики приложени€.")]
+        [TestCase(ErrorCode.InternalLogicError,     "¬нутренн€€ ошибка логики приложени€.")]
         [TestCase(ErrorCode.InvalidOperation,       "ќшибка выполнени€ операции.")]
         [TestCase(ErrorCode.Unauthorized,           "Ќесанкционированный доступ к ресурсу.")]
         [TestCase(ErrorCode.EntityValidation,       "ќшибка валидации параметров сущности.")]
@@ -59,7 +59,7 @@ namespace Mt.Utilities.Test
         /// <param name="expected">ќжидаемый результат.</param>
         [Test]
         [TestCase(ErrorCode.InternalServerError,    500)]
-        [TestCase(ErrorCode.InternalLogic,          400)]
+        [TestCase(ErrorCode.InternalLogicError,     400)]
         [TestCase(ErrorCode.InvalidOperation,       400)]
         [TestCase(ErrorCode.Unauthorized,           401)]
         [TestCase(ErrorCode.EntityValidation,       400)]

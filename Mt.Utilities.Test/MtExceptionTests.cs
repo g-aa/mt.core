@@ -19,7 +19,7 @@ namespace Mt.Utilities.Test
         [Test]
         [TestCase(ErrorCode.EntityValidation,    null,      "Ошибка валидации параметров сущности.")]
         [TestCase(ErrorCode.InvalidOperation,    "",        "Ошибка выполнения операции.")]
-        [TestCase(ErrorCode.InternalLogic,       " ",       "Внутренняя ошибка логики приложения.")]
+        [TestCase(ErrorCode.InternalLogicError,  " ",       "Внутренняя ошибка логики приложения.")]
         [TestCase(ErrorCode.EntityAlreadyExists, "\t",      "Сущность уже содержится в последовательности.")]
         [TestCase(ErrorCode.EntityNotFound,      "Ошибка.", "Ошибка.")]
         public void PositiveTest(ErrorCode code, string message, string expected)
