@@ -12,6 +12,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - MT-0009: Добавление пакета JunitXml.TestLogger;
 - MT-0009: Добавление .test.bat;
 - MT-0009: Добавление файла coverlet.runsettings;
+- MT-0009: Добавление функции транслитерации Ru2Eng;
 
 ### Изменено
 - MT-0009: Обновление пакетов;
@@ -27,7 +28,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Изменено
 - MT-0007: Обновление и дополнение кодов ошибок;
-- MT-0007: Обнавление Unit-тестов;
+- MT-0007: Обновление Unit-тестов;
 - MT-0007: Обновление пакетов;
 
 ### Удалено
@@ -42,7 +43,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Изменено
 - MT-0006: Обновление и дополнение кодов ошибок;
-- MT-0006: Обнавление Unit-тестов;
+- MT-0006: Обновление Unit-тестов;
 
 ### Удалено
 - -//-
@@ -51,10 +52,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Добавлено
 - MT-0004: Добавление файла CHANGELOG.md;
 - MT-0004: Добавление файла .editorconfig;
-- MT-0004: Добавление строк основного понятийного аппарата по умолчанию (DefaultString);
+- MT-0004: Добавление строк основного понятийного аппарата по умолчанию DefaultString;
 
 ### Изменено
-- MT-0004: Изменение название для класса (Format) на (StringFormat);
+- MT-0004: Изменение названия для класса Format на StringFormat;
 
 ### Удалено
 - -//-
@@ -62,10 +63,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## 6.0.0 - 2022-08-31
 ### Добавлено
 - MT-0001: Реализация базового функционал пакета MT.Utilities;
-- MT-0001: Добавление базовых исключенией (MtBaseException, MtException) и кодов ошибок (ErrorCode);
-- MT-0001: Добавление модели файла (FileModel);
-- MT-0001: Добавление класса упрощеной проверки аргументов функций (Check);
-- MT-0001: Добавление формата строк основного понятийного аппарата используемого в проектах (Format);
+- MT-0001: Добавление базовых исключенией MtBaseException, MtException и кодов ошибок ErrorCode;
+- MT-0001: Добавление класса FileModel;
+- MT-0001: Добавление класса упрощеной проверки аргументов функций Check;
+- MT-0001: Добавление формата строк основного понятийного аппарата используемого в проектах Format;
 
 ### Изменено
 - -//-
