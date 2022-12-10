@@ -7,7 +7,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "misc", "misc", "{78CB6E8D-F
 	ProjectSection(SolutionItems) = preProject
 		.editorconfig = .editorconfig
 		.gitignore = .gitignore
+		.test.bat = .test.bat
 		CHANGELOG.md = CHANGELOG.md
+		coverlet.runsettings = coverlet.runsettings
 		Directory.Build.props = Directory.Build.props
 		iconMt.png = iconMt.png
 		iconNet.png = iconNet.png
@@ -15,9 +17,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "misc", "misc", "{78CB6E8D-F
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mt.Utilities", "Mt.Utilities\Mt.Utilities.csproj", "{2B72A799-F55E-473E-9BC3-1AB7A7C86AAF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mt.Utilities", "src\Mt.Utilities\Mt.Utilities.csproj", "{2B72A799-F55E-473E-9BC3-1AB7A7C86AAF}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mt.Utilities.Test", "Mt.Utilities.Test\Mt.Utilities.Test.csproj", "{F8A876D3-1DB1-47F0-AFFD-071DC5A505A3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mt.Utilities.Test", "tests\Mt.Utilities.Test\Mt.Utilities.Test.csproj", "{F8A876D3-1DB1-47F0-AFFD-071DC5A505A3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{83EE4041-E7F6-4096-9D40-797F54BACA44}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{BF24DE20-6FA5-4235-8EAE-0C75DB084A4B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -36,6 +42,10 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2B72A799-F55E-473E-9BC3-1AB7A7C86AAF} = {83EE4041-E7F6-4096-9D40-797F54BACA44}
+		{F8A876D3-1DB1-47F0-AFFD-071DC5A505A3} = {BF24DE20-6FA5-4235-8EAE-0C75DB084A4B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {47EA194E-B034-4ED4-BDD3-041FB978904F}
