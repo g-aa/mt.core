@@ -6,7 +6,22 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-## [6.1.1] - 2022-10-04
+## 6.2.0 - 2022-12-10
+### Добавлено
+- MT-0009: Добавление пакета coverlet.collector;
+- MT-0009: Добавление пакета JunitXml.TestLogger;
+- MT-0009: Добавление .test.bat;
+- MT-0009: Добавление файла coverlet.runsettings;
+
+### Изменено
+- MT-0009: Обновление пакетов;
+- MT-0009: Изменение путей в сборке, добавление каталогов src и tests;
+- MT-0009: Обновление файла README.md;
+
+### Удалено
+- -//-
+
+## 6.1.1 - 2022-10-04
 ### Добавлено
 - -//-
 
@@ -18,12 +33,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Удалено
 - -//-
 
-## [6.1.0] - 2022-09-18
+## 6.1.0 - 2022-09-18
 ### Добавлено
-- MT-0006: Добавление пакета SonarAnalyzer.CSharp в проект;
+- MT-0006: Добавление пакета SonarAnalyzer.CSharp;
 - MT-0006: Добавление mt-utilities.snk;
-- MT-0006: Добавление Directory.Build.props;
-- MT-0006: Добавление в проект ZipFileModel;
+- MT-0006: Добавление файла Directory.Build.props;
+- MT-0006: Добавление класса ZipFileModel;
 
 ### Изменено
 - MT-0006: Обновление и дополнение кодов ошибок;
@@ -32,7 +47,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Удалено
 - -//-
 
-## [6.0.1] - 2022-09-04
+## 6.0.1 - 2022-09-04
 ### Добавлено
 - MT-0004: Добавление файла CHANGELOG.md;
 - MT-0004: Добавление файла .editorconfig;

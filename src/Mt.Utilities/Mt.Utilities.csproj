@@ -6,22 +6,22 @@
 		<PackageTags>Mt;Net;Utilities;</PackageTags>
 		<Description>Универсальные утилиты используемые в проектах Mt Rele.</Description>	
 		<AssemblyOriginatorKeyFile>$(MSBuildThisFileDirectory)mt-utilities.snk</AssemblyOriginatorKeyFile>		
-		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
 		<GenerateDocumentationFile>true</GenerateDocumentationFile>
 	</PropertyGroup>
 
 	<ItemGroup>
-		<None Include="..\README.md">
+		<None Include="..\..\README.md">
 			<Pack>True</Pack>
 			<PackagePath>\</PackagePath>
 		</None>
 	</ItemGroup>
 
 	<ItemGroup>
-		<None Include="..\iconMt.png">
+		<None Include="..\..\iconMt.png">
 			<Pack>True</Pack>
 			<PackagePath>\</PackagePath>
 		</None>
 	</ItemGroup>
-
+	
 </Project>

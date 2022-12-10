@@ -8,6 +8,12 @@ netstandard2.1, SonarAnalyzer.CSharp, NUnit.
 
 ## [История изменения.](CHANGELOG.md)
 
+## Покрытие кода тестами:
+
+Перед первым запуском ```.test.bat```, для просмотра покрытия кода тестами необходимо выполнить команду:
+
+```dotnet tool install -g dotnet-reportgenerator-globaltool```
+
 ## Основной функционал пакета:
 
 | Компонент                               | Описание                                                            |
