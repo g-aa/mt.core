@@ -73,7 +73,7 @@ namespace Mt.Utilities
 		{
 			if (value is null)
 			{
-				Check.NotEmpty(parameterName, nameof(parameterName), message);
+				Check.NotEmpty(parameterName, nameof(parameterName));
                 throw new ArgumentNullException(parameterName, string.IsNullOrWhiteSpace(message) ? $"Checked parameter is null." : message);
             }
 
@@ -95,8 +95,8 @@ namespace Mt.Utilities
 			var zero = default(T);
 			if (value.Equals(zero))
 			{
-				Check.NotEmpty(parameterName, nameof(parameterName), message);
-				throw new ArgumentException(message ?? $"Input parameter '{parameterName}' is zero value.");
+				Check.NotEmpty(parameterName, nameof(parameterName));
+				throw new ArgumentException(string.IsNullOrWhiteSpace(message) ? $"Input parameter '{parameterName}' is zero value." : message);
 			}
 
 			return value;
@@ -115,13 +115,13 @@ namespace Mt.Utilities
         {
             if ((long)maxValue - minValue <= 0)
 			{
-				throw new ArgumentException($"Интервал значений для проверки параметра задан неверно [min:{minValue}; max:{maxValue}].");
+				throw new ArgumentException($"The interval for checking the parameter is set incorrectly [min:{minValue}; max:{maxValue}].");
 			}
 
 			if (!(minValue <= value && value <= maxValue))
 			{
 				Check.NotEmpty(parameterName, nameof(parameterName));
-				throw new ArgumentException($"Параметр '{parameterName}':{value}∉[min:{minValue}; max:{maxValue}].");
+				throw new ArgumentException($"Input parameter '{parameterName}':{value}∉[min:{minValue}; max:{maxValue}].");
 			}
 
 			return value;

@@ -8,6 +8,12 @@ netstandard2.1, SonarAnalyzer.CSharp, NUnit.
 
 ## [История изменения.](CHANGELOG.md)
 
+## Покрытие кода тестами:
+
+Перед первым запуском ```.test.bat```, для просмотра покрытия кода тестами необходимо выполнить команду:
+
+```dotnet tool install -g dotnet-reportgenerator-globaltool```
+
 ## Основной функционал пакета:
 
 | Компонент                               | Описание                                                            |
@@ -15,6 +21,7 @@ netstandard2.1, SonarAnalyzer.CSharp, NUnit.
 | Mt.Utilities.Exceptions.ErrorCode       | Перечень кодов ошибок.                                              |
 | Mt.Utilities.Exceptions.MtBaseException | Базовое исключение применяемое в логики разрабатываемых приложений. |
 | Mt.Utilities.Exceptions.MtException     | Исключение логики приложений использующее коды ошибок.              |
+| Mt.Utilities.Extensions.String.Ru2Eng   | Транслитерация: ISO 9:1995, ГОСТ 7.79-2000 (Система Б).             |
 | Mt.Utilities.IO.FileModel               | Модель передаваемых файлов через API.                               |
 | Mt.Utilities.IO.ZipFileModel            | Модель zip-файлов передаваемых через API.                           |
 | Mt.Utilities.Check                      | Класс для упрощения проверки аргументов функций.                    |
