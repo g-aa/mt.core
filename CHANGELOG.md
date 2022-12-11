@@ -6,7 +6,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-## 6.2.0 - 2022-12-10
+## [6.2.0] - 2022-12-11
 ### Добавлено
 - MT-0009: Добавление пакета coverlet.collector;
 - MT-0009: Добавление пакета JunitXml.TestLogger;
@@ -77,4 +77,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - -//-
 
 [Unreleased]: https://github.com/g-aa/mt-utilities/tree/develop
-[6.1.1]: https://github.com/g-aa/mt-utilities/tree/main
+[6.2.0]: https://github.com/g-aa/mt-utilities/tree/main
