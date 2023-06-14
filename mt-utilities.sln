@@ -19,11 +19,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "misc", "misc", "{78CB6E8D-F
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mt.Utilities", "src\Mt.Utilities\Mt.Utilities.csproj", "{2B72A799-F55E-473E-9BC3-1AB7A7C86AAF}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mt.Utilities.Test", "tests\Mt.Utilities.Test\Mt.Utilities.Test.csproj", "{F8A876D3-1DB1-47F0-AFFD-071DC5A505A3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mt.Utilities.Test", "test\Mt.Utilities.Test\Mt.Utilities.Test.csproj", "{F8A876D3-1DB1-47F0-AFFD-071DC5A505A3}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{83EE4041-E7F6-4096-9D40-797F54BACA44}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{BF24DE20-6FA5-4235-8EAE-0C75DB084A4B}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{BF24DE20-6FA5-4235-8EAE-0C75DB084A4B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
