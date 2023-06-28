@@ -6,12 +6,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-## [6.3.0] - 2023-06-14
+## [6.3.0] - 2023-06-29
+
+### Добавлено
+
+- MT-0009: Настройка версии проекта, добавлен файл .version;
+
 ### Изменено
-- MT-0009: Рефакторинг библиотеки.
+
+- MT-0009: Рефакторинг библиотеки;
 
 ## [6.2.0] - 2022-12-11
+
 ### Добавлено
+
 - MT-0009: Добавление пакета coverlet.collector;
 - MT-0009: Добавление пакета JunitXml.TestLogger;
 - MT-0009: Добавление .test.bat;
@@ -19,66 +27,58 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - MT-0009: Добавление функции транслитерации Ru2Eng;
 
 ### Изменено
+
 - MT-0009: Обновление пакетов;
 - MT-0009: Изменение путей в сборке, добавление каталогов src и tests;
 - MT-0009: Обновление файла README.md;
 - MT-0009: Обновление Unit-тестов для Check методов;
 - MT-0009: Исправление ошибок в Check методах, доработка;
 
-### Удалено
-- -//-
-
-## 6.1.1 - 2022-10-04
-### Добавлено
-- -//-
+## [6.1.1] - 2022-10-04
 
 ### Изменено
+
 - MT-0007: Обновление и дополнение кодов ошибок;
 - MT-0007: Обновление Unit-тестов;
 - MT-0007: Обновление пакетов;
 
-### Удалено
-- -//-
-
 ## 6.1.0 - 2022-09-18
+
 ### Добавлено
+
 - MT-0006: Добавление пакета SonarAnalyzer.CSharp;
 - MT-0006: Добавление mt-utilities.snk;
 - MT-0006: Добавление файла Directory.Build.props;
 - MT-0006: Добавление класса ZipFileModel;
 
 ### Изменено
+
 - MT-0006: Обновление и дополнение кодов ошибок;
 - MT-0006: Обновление Unit-тестов;
 
-### Удалено
-- -//-
-
 ## 6.0.1 - 2022-09-04
+
 ### Добавлено
+
 - MT-0004: Добавление файла CHANGELOG.md;
 - MT-0004: Добавление файла .editorconfig;
 - MT-0004: Добавление строк основного понятийного аппарата по умолчанию DefaultString;
 
 ### Изменено
+
 - MT-0004: Изменение названия для класса Format на StringFormat;
 
-### Удалено
-- -//-
-
 ## 6.0.0 - 2022-08-31
+
 ### Добавлено
+
 - MT-0001: Реализация базового функционал пакета MT.Utilities;
 - MT-0001: Добавление базовых исключенией MtBaseException, MtException и кодов ошибок ErrorCode;
 - MT-0001: Добавление класса FileModel;
 - MT-0001: Добавление класса упрощеной проверки аргументов Check методы;
 - MT-0001: Добавление формата строк основного понятийного аппарата используемого в проектах Format;
 
-### Изменено
-- -//-
-
-### Удалено
-- -//-
-
-[Unreleased]: https://github.com/g-aa/mt-utilities/tree/develop
-[6.2.0]: https://github.com/g-aa/mt-utilities/tree/main
+[Unreleased]: https://github.com/g-aa/mt-utilities/compare/release-v6.3.0...main
+[6.3.0]: https://github.com/g-aa/mt-utilities/compare/release-v6.2.0...release-v6.3.0
+[6.2.0]: https://github.com/g-aa/mt-utilities/compare/release-v6.1.1...release-v6.2.0
+[6.1.1]: https://github.com/g-aa/mt-utilities/releases/tag/release-v6.1.1
