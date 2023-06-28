@@ -10,7 +10,7 @@
     <PackageProjectUrl>https://github.com/g-aa/mt-utilities</PackageProjectUrl>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageIcon>iconMt.png</PackageIcon>
-    <Build_Version Condition=" '$(Build_Version)' == '' ">6.3.0</Build_Version>
+    <Build_Version Condition=" '$(Build_Version)' == '' ">0.0.0</Build_Version>
     <Build_Number Condition=" '$(Build_Number)' == '' ">$(Build_Version).0</Build_Number>
     <Version>$(Build_Version)</Version>
     <PackageVersion>$(Build_Version)</PackageVersion>
@@ -29,4 +29,10 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>true</ImplicitUsings>
   </PropertyGroup>
+  <Target Name="InjectVersionFromFile" BeforeTargets="BeforeBuild">
+    <ReadLinesFromFile File="..\..\.version">
+      <Output TaskParameter="Lines" PropertyName="Build_Version"/>
+    </ReadLinesFromFile>
+    <Message Importance="High" Text="Project version from file '.version' - $(Build_Version)"/>
+  </Target>
 </Project>
