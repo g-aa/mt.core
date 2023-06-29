@@ -14,7 +14,6 @@ public sealed class ErrorCodeTest
     /// </summary>
     /// <param name="code">Код ошибки.</param>
     /// <param name="expected">Ожидаемый результат.</param>
-    [Test]
     [TestCase(ErrorCode.InternalServerError, "MT-E0000")]
     [TestCase(ErrorCode.InternalLogicError, "MT-E0001")]
     [TestCase(ErrorCode.InvalidOperation, "MT-E0002")]
@@ -38,7 +37,6 @@ public sealed class ErrorCodeTest
     /// </summary>
     /// <param name="code">Код ошибки.</param>
     /// <param name="expected">Ожидаемый результат.</param>
-    [Test]
     [TestCase(ErrorCode.InternalServerError, "Внутренняя ошибка сервера.")]
     [TestCase(ErrorCode.InternalLogicError, "Внутренняя ошибка логики приложения.")]
     [TestCase(ErrorCode.InvalidOperation, "Ошибка выполнения операции.")]
@@ -62,7 +60,6 @@ public sealed class ErrorCodeTest
     /// </summary>
     /// <param name="code">Код ошибки.</param>
     /// <param name="expected">Ожидаемый результат.</param>
-    [Test]
     [TestCase(ErrorCode.InternalServerError, 500)]
     [TestCase(ErrorCode.InternalLogicError, 400)]
     [TestCase(ErrorCode.InvalidOperation, 400)]

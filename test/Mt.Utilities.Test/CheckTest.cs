@@ -10,7 +10,6 @@ public sealed class CheckTest
     /// Положительный тест для <see cref="Check.NotEmpty(string, string, string?)"/>.
     /// </summary>
     /// <param name="value">Строка.</param>
-    [Test]
     [TestCase("1234567890")]
     public void NotEmptyStringPositiveTest(string value)
     {
@@ -28,7 +27,6 @@ public sealed class CheckTest
     /// <param name="parameterName">Наименование параметра.</param>
     /// <param name="message">Сообщение.</param>
     /// <param name="expected">Ожидаемый результат.</param>
-    [Test]
     [TestCase(null, null, null, "Checked parameter is null. (Parameter 'parameterName')")]
     [TestCase(null, "value", null, "Checked parameter is null. (Parameter 'value')")]
     [TestCase(null, "value", "", "Checked parameter is null. (Parameter 'value')")]
@@ -51,7 +49,6 @@ public sealed class CheckTest
     /// <param name="parameterName">Наименование параметра.</param>
     /// <param name="message">Сообщение.</param>
     /// <param name="expected">Ожидаемый результат.</param>
-    [Test]
     [TestCase("", "value", null, "Checked parameter 'value' is empty.")]
     [TestCase("", "value", "", "Checked parameter 'value' is empty.")]
     [TestCase("", "value", " ", "Checked parameter 'value' is empty.")]
@@ -72,7 +69,6 @@ public sealed class CheckTest
     /// Положительный тест для <see cref="Check.NotEmpty{T}(IEnumerable{T}, string, string?)"/>.
     /// </summary>
     /// <param name="value">Коллекция.</param>
-    [Test]
     [TestCase(new object[] { "aaa", "bbb", "ccc" })]
     public void NotEmptyEnumerablePositiveTest(object[] value)
     {
@@ -90,7 +86,6 @@ public sealed class CheckTest
     /// <param name="parameterName">Наименование параметра.</param>
     /// <param name="message">Сообщение.</param>
     /// <param name="expected">Ожидаемый результат.</param>
-    [Test]
     [TestCase(null, null, null, "Checked parameter is null. (Parameter 'parameterName')")]
     [TestCase(null, "value", null, "Checked parameter is null. (Parameter 'value')")]
     [TestCase(null, "value", "", "Checked parameter is null. (Parameter 'value')")]
@@ -113,7 +108,6 @@ public sealed class CheckTest
     /// <param name="parameterName">Наименование параметра.</param>
     /// <param name="message">Сообщение.</param>
     /// <param name="expected">Ожидаемый результат.</param>
-    [Test]
     [TestCase(new object[] { }, "enumerable value", null, "Checked parameter 'enumerable value' is empty.")]
     [TestCase(new object[] { }, "enumerable value", "", "Checked parameter 'enumerable value' is empty.")]
     [TestCase(new object[] { }, "enumerable value", " ", "Checked parameter 'enumerable value' is empty.")]
@@ -132,7 +126,6 @@ public sealed class CheckTest
     /// Положительный тест для <see cref="Check.NotNull{T}(T, string, string?)"/>.
     /// </summary>
     /// <param name="value">Параметр.</param>
-    [Test]
     [TestCase("")]
     [TestCase(" ")]
     [TestCase("\t")]
@@ -157,7 +150,6 @@ public sealed class CheckTest
     /// <param name="parameterName">Наименование параметра.</param>
     /// <param name="message">Сообщение.</param>
     /// <param name="expected">Ожидаемый результат.</param>
-    [Test]
     [TestCase(null, null, null, "Checked parameter is null. (Parameter 'parameterName')")]
     [TestCase(null, "test parameter", null, "Checked parameter is null. (Parameter 'test parameter')")]
     [TestCase(null, "test parameter", "", "Checked parameter is null. (Parameter 'test parameter')")]
@@ -178,7 +170,6 @@ public sealed class CheckTest
     /// </summary>
     /// <typeparam name="T">Тип параметра.</typeparam>
     /// <param name="value">Параметр.</param>
-    [Test]
     [TestCase(-12)]
     [TestCase(2.1)]
     [TestCase('A')]
@@ -201,7 +192,6 @@ public sealed class CheckTest
     /// <param name="parameterName">Наименование параметра.</param>
     /// <param name="message">Сообщение.</param>
     /// <param name="expected">Ожидаемый результат.</param>
-    [Test]
     [TestCase(default(double), "test parameter", null, "Input parameter 'test parameter' is zero value.")]
     [TestCase(default(byte), "test parameter", null, "Input parameter 'test parameter' is zero value.")]
     [TestCase(default(long), "test parameter", null, "Input parameter 'test parameter' is zero value.")]
@@ -225,7 +215,6 @@ public sealed class CheckTest
     /// <param name="min">Минимальное значение.</param>
     /// <param name="value">Параметр.</param>
     /// <param name="max">Максимальное значение.</param>
-    [Test]
     [TestCase(int.MinValue, 100, int.MaxValue)]
     [TestCase(0, 200, 300)]
     [TestCase(-300, -100, 0)]
@@ -246,7 +235,6 @@ public sealed class CheckTest
     /// <param name="max">Максимальное значение.</param>
     /// <param name="name">Наименование параметра.</param>
     /// <param name="expected">Ожидаемый результат.</param>
-    [Test]
     [TestCase(300, 100, 200, "test parameter", "The interval for checking the parameter is set incorrectly [min:300; max:200].")]
     [TestCase(int.MaxValue, 100, int.MinValue, "test parameter", "The interval for checking the parameter is set incorrectly [min:2147483647; max:-2147483648].")]
     [TestCase(100, 300, 200, "test parameter", $"Input parameter 'test parameter':300∉[min:100; max:200].")]

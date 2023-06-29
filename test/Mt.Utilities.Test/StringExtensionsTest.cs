@@ -13,7 +13,6 @@ public sealed class StringExtensionsTest
     /// </summary>
     /// <param name="ruString">Строка.</param>
     /// <param name="expected">Ожидаемый результат.</param>
-    [Test]
     [TestCase("", "")]
     [TestCase(" ", " ")]
     [TestCase("\t", "\t")]
@@ -33,7 +32,6 @@ public sealed class StringExtensionsTest
     /// </summary>
     /// <param name="ruString"></param>
     /// <param name="expected"></param>
-    [Test]
     [TestCase(null, "Checked parameter is null. (Parameter 'str')")]
     public void Ru2EngNegativeTest(string ruString, string expected)
     {
