@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [6.3.1] - 2023-07-01
+
+### Изменено
+
+- MT-0009: Исправление линков в Changelog;
+
 ## [6.3.0] - 2023-06-29
 
 ### Добавлено
@@ -36,7 +42,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - MT-0009: Обновление Unit-тестов для Check методов;
 - MT-0009: Исправление ошибок в Check методах, доработка;
 
-## [6.1.1] - 2022-10-04
+## [6.1.1] - 2022-10-06
 
 ### Изменено
 
@@ -44,7 +50,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - MT-0007: Обновление Unit-тестов;
 - MT-0007: Обновление пакетов;
 
-## 6.1.0 - 2022-09-18
+## [6.1.0] - 2022-09-29
 
 ### Добавлено
 
@@ -58,7 +64,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - MT-0006: Обновление и дополнение кодов ошибок;
 - MT-0006: Обновление Unit-тестов;
 
-## 6.0.1 - 2022-09-04
+## [6.0.1] - 2022-09-04
 
 ### Добавлено
 
@@ -70,7 +76,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - MT-0004: Изменение названия для класса Format на StringFormat;
 
-## 6.0.0 - 2022-08-31
+## [6.0.0] - 2022-08-31
 
 ### Добавлено
 
@@ -80,7 +86,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - MT-0001: Добавление класса упрощеной проверки аргументов Check методы;
 - MT-0001: Добавление формата строк основного понятийного аппарата используемого в проектах Format;
 
-[Unreleased]: https://github.com/g-aa/mt-utilities/compare/release-v6.3.0...main
+[Unreleased]: https://github.com/g-aa/mt-utilities/compare/release-v6.3.1...main
+[6.3.1]: https://github.com/g-aa/mt-utilities/compare/release-v6.3.0...release-v6.3.1
 [6.3.0]: https://github.com/g-aa/mt-utilities/compare/release-v6.2.0...release-v6.3.0
 [6.2.0]: https://github.com/g-aa/mt-utilities/compare/release-v6.1.1...release-v6.2.0
-[6.1.1]: https://github.com/g-aa/mt-utilities/releases/tag/release-v6.1.1
+[6.1.1]: https://github.com/g-aa/mt-utilities/compare/release-v6.1.0...release-v6.1.1
+[6.1.0]: https://github.com/g-aa/mt-utilities/compare/release-v6.0.1...release-v6.1.0
+[6.0.1]: https://github.com/g-aa/mt-utilities/compare/release-v6.0.0...release-v6.0.1
+[6.0.0]: https://github.com/g-aa/mt-utilities/releases/tag/release-v6.0.0
