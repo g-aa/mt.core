@@ -33,7 +33,7 @@ public sealed class CheckTest
     [TestCase(null, "value", " ", "Checked parameter is null. (Parameter 'value')")]
     [TestCase(null, "value", "\t", "Checked parameter is null. (Parameter 'value')")]
     [TestCase(null, "value", "Test message.", "Test message. (Parameter 'value')")]
-    public void NotEmptyStringArgumentNullExceptionTest(string value, string parameterName, string message, string expected)
+    public void NotEmptyStringArgumentNullExceptionTest(string? value, string parameterName, string message, string expected)
     {
         // act
         var ex = Assert.Throws<ArgumentNullException>(() => Check.NotEmpty(value, parameterName, message));
@@ -56,7 +56,7 @@ public sealed class CheckTest
     [TestCase("", "value", "Test message.", "Test message.")]
     [TestCase(" ", "value", null, "Checked parameter 'value' is empty.")]
     [TestCase("\t", "value", null, "Checked parameter 'value' is empty.")]
-    public void NotEmptyStringArgumentExceptionTest(string value, string parameterName, string message, string expected)
+    public void NotEmptyStringArgumentExceptionTest(string? value, string parameterName, string message, string expected)
     {
         // act
         var ex = Assert.Throws<ArgumentException>(() => Check.NotEmpty(value, parameterName, message));
@@ -70,7 +70,7 @@ public sealed class CheckTest
     /// </summary>
     /// <param name="value">Коллекция.</param>
     [TestCase(new object[] { "aaa", "bbb", "ccc" })]
-    public void NotEmptyEnumerablePositiveTest(object[] value)
+    public void NotEmptyEnumerablePositiveTest(object[]? value)
     {
         // act
         var result = Check.NotEmpty(value, nameof(value));
@@ -92,7 +92,7 @@ public sealed class CheckTest
     [TestCase(null, "value", " ", "Checked parameter is null. (Parameter 'value')")]
     [TestCase(null, "value", "\t", "Checked parameter is null. (Parameter 'value')")]
     [TestCase(null, "value", "Test message.", "Test message. (Parameter 'value')")]
-    public void NotEmptyEnumerableArgumentNullExceptionTest(object[] value, string parameterName, string message, string expected)
+    public void NotEmptyEnumerableArgumentNullExceptionTest(object[]? value, string parameterName, string message, string expected)
     {
         // act
         var ex = Assert.Throws<ArgumentNullException>(() => Check.NotEmpty(value, parameterName, message));
@@ -113,7 +113,7 @@ public sealed class CheckTest
     [TestCase(new object[] { }, "enumerable value", " ", "Checked parameter 'enumerable value' is empty.")]
     [TestCase(new object[] { }, "enumerable value", "\t", "Checked parameter 'enumerable value' is empty.")]
     [TestCase(new object[] { }, "enumerable value", "Test message.", "Test message.")]
-    public void NotEmptyEnumerableArgumentExceptionTest(object[] value, string parameterName, string message, string expected)
+    public void NotEmptyEnumerableArgumentExceptionTest(object[]? value, string parameterName, string message, string expected)
     {
         // act
         var ex = Assert.Throws<ArgumentException>(() => Check.NotEmpty(value, parameterName, message));
@@ -156,7 +156,7 @@ public sealed class CheckTest
     [TestCase(null, "test parameter", " ", "Checked parameter is null. (Parameter 'test parameter')")]
     [TestCase(null, "test parameter", "\t", "Checked parameter is null. (Parameter 'test parameter')")]
     [TestCase(null, "test parameter", "Test message.", "Test message. (Parameter 'test parameter')")]
-    public void NotNullNegativeTest(object value, string parameterName, string message, string expected)
+    public void NotNullNegativeTest(object? value, string parameterName, string message, string expected)
     {
         // act
         var ex = Assert.Throws<ArgumentNullException>(() => Check.NotNull(value, parameterName, message));
@@ -174,7 +174,6 @@ public sealed class CheckTest
     [TestCase(2.1)]
     [TestCase('A')]
     [TestCase(23U)]
-    [System.Diagnostics.CodeAnalysis.SuppressMessage("Blocker Code Smell", "S3433:Test method signatures should be correct", Justification = "<Pending>")]
     public void NotZeroPositiveTest<T>(T value) where T : struct
     {
         // act
@@ -199,7 +198,6 @@ public sealed class CheckTest
     [TestCase(default(uint), "test parameter", " ", "Input parameter 'test parameter' is zero value.")]
     [TestCase(default(char), "test parameter", "\t", "Input parameter 'test parameter' is zero value.")]
     [TestCase(default(bool), "test parameter", "Test message.", "Test message.")]
-    [System.Diagnostics.CodeAnalysis.SuppressMessage("Blocker Code Smell", "S3433:Test method signatures should be correct", Justification = "<Pending>")]
     public void NotZeroNegativeTest<T>(T value, string parameterName, string message, string expected) where T : struct
     {
         // act

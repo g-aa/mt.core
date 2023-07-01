@@ -16,7 +16,7 @@ public static class Check
     /// <returns>Входная строкаы.</returns>
     /// <exception cref="ArgumentException">Строка принимает пустое значение.</exception>
     /// <exception cref="ArgumentNullException">Строка принимает значение равное null.</exception>
-    public static string NotEmpty(string value, [NotNull] string parameterName, string? message = null)
+    public static string NotEmpty(string? value, [NotNull] string parameterName, string? message = null)
     {
         if (value is null)
         {
@@ -40,7 +40,7 @@ public static class Check
     /// <param name="value">Значение строки.</param>
     /// <param name="parameterName">Название параметра.</param>
 	/// <param name="message">Сообщение об ошибке.</param>
-	public static IEnumerable<T> NotEmpty<T>(IEnumerable<T> value, [NotNull] string parameterName, string? message = null)
+	public static IEnumerable<T> NotEmpty<T>(IEnumerable<T>? value, [NotNull] string parameterName, string? message = null)
     {
         if (value is null)
         {
@@ -66,7 +66,7 @@ public static class Check
     /// <param name="message">Сообщение об ошибке.</param>
     /// <returns>Входной параметр.</returns>
     /// <exception cref="ArgumentNullException">Параметр равен null.</exception>
-    public static T NotNull<T>(T value, [NotNull] string parameterName, string? message = null)
+    public static T NotNull<T>(T? value, [NotNull] string parameterName, string? message = null)
     {
         if (value is null)
         {
