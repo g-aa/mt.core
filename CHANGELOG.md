@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [6.4.0] - 2023-07-01
+
+### Изменено
+
+- MT-0009: В методах Check добавлена поддержка nullable значений;
+
 ## [6.3.1] - 2023-07-01
 
 ### Изменено
@@ -86,7 +92,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - MT-0001: Добавление класса упрощеной проверки аргументов Check методы;
 - MT-0001: Добавление формата строк основного понятийного аппарата используемого в проектах Format;
 
-[Unreleased]: https://github.com/g-aa/mt-utilities/compare/release-v6.3.1...main
+[Unreleased]: https://github.com/g-aa/mt-utilities/compare/release-v6.4.0...main
+[6.4.0]: https://github.com/g-aa/mt-utilities/compare/release-v6.3.1...release-v6.4.0
 [6.3.1]: https://github.com/g-aa/mt-utilities/compare/release-v6.3.0...release-v6.3.1
 [6.3.0]: https://github.com/g-aa/mt-utilities/compare/release-v6.2.0...release-v6.3.0
 [6.2.0]: https://github.com/g-aa/mt-utilities/compare/release-v6.1.1...release-v6.2.0
