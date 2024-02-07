@@ -29,7 +29,7 @@ public sealed class ErrorCodeTest
         var result = code.Title();
 
         // assert
-        Assert.That(result, Is.EqualTo(expected));
+        result.Should().Be(expected);
     }
 
     /// <summary>
@@ -52,7 +52,7 @@ public sealed class ErrorCodeTest
         var result = code.Desc();
 
         // assert
-        Assert.That(result, Is.EqualTo(expected));
+        result.Should().Be(expected);
     }
 
     /// <summary>
@@ -75,6 +75,6 @@ public sealed class ErrorCodeTest
         var result = code.HttpStatusCode();
 
         // assert
-        Assert.That(result, Is.EqualTo(expected));
+        result.Should().Be(expected);
     }
 }

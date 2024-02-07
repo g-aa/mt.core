@@ -45,7 +45,8 @@ public static class ErrorCodeExtensions
     /// <typeparam name="T">Тип атрибута.</typeparam>
     /// <param name="code">Код ошибки.</param>
     /// <returns>Атрибут.</returns>
-    private static T? Attribute<T>(this ErrorCode code) where T : Attribute
+    private static T? Attribute<T>(this ErrorCode code)
+        where T : Attribute
     {
         var type = code.GetType();
         var infos = type.GetMember(code.ToString());
@@ -59,6 +60,7 @@ public static class ErrorCodeExtensions
         {
             return default;
         }
+
         return (T)attrs.Single();
     }
 }

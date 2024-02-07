@@ -2,10 +2,15 @@
 
 All notable changes to this project will be documented in this file.
 
-The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
-and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+
+## [8.0.0] - 2024-02-07
+
+### Изменено
+
+- MT-0009: Обновление проекта;
 
 ## [6.4.0] - 2023-07-01
 
@@ -92,7 +97,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - MT-0001: Добавление класса упрощеной проверки аргументов Check методы;
 - MT-0001: Добавление формата строк основного понятийного аппарата используемого в проектах Format;
 
-[Unreleased]: https://github.com/g-aa/mt-utilities/compare/release-v6.4.0...main
+[Unreleased]: https://github.com/g-aa/mt-utilities/compare/release-v8.0.0...main
+[8.0.0]: https://github.com/g-aa/mt-utilities/compare/release-v6.4.0...release-v8.0.0
 [6.4.0]: https://github.com/g-aa/mt-utilities/compare/release-v6.3.1...release-v6.4.0
 [6.3.1]: https://github.com/g-aa/mt-utilities/compare/release-v6.3.0...release-v6.3.1
 [6.3.0]: https://github.com/g-aa/mt-utilities/compare/release-v6.2.0...release-v6.3.0
