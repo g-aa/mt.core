@@ -17,7 +17,7 @@ public sealed class CheckTest
         var result = Check.NotEmpty(value, nameof(value));
 
         // assert
-        Assert.That(result, Is.EqualTo(value));
+        result.Should().Be(value);
     }
 
     /// <summary>
@@ -36,10 +36,10 @@ public sealed class CheckTest
     public void NotEmptyStringArgumentNullExceptionTest(string? value, string parameterName, string message, string expected)
     {
         // act
-        var ex = Assert.Throws<ArgumentNullException>(() => Check.NotEmpty(value, parameterName, message));
+        var func = () => Check.NotEmpty(value, parameterName, message);
 
         // assert
-        Assert.That(ex!.Message, Is.EqualTo(expected));
+        func.Should().Throw<ArgumentNullException>().WithMessage(expected);
     }
 
     /// <summary>
@@ -59,10 +59,10 @@ public sealed class CheckTest
     public void NotEmptyStringArgumentExceptionTest(string? value, string parameterName, string message, string expected)
     {
         // act
-        var ex = Assert.Throws<ArgumentException>(() => Check.NotEmpty(value, parameterName, message));
+        var func = () => Check.NotEmpty(value, parameterName, message);
 
         // assert
-        Assert.That(ex!.Message, Is.EqualTo(expected));
+        func.Should().Throw<ArgumentException>().WithMessage(expected);
     }
 
     /// <summary>
@@ -76,11 +76,11 @@ public sealed class CheckTest
         var result = Check.NotEmpty(value, nameof(value));
 
         // assert
-        Assert.That(result, Is.EqualTo(value));
+        result.Should().BeEquivalentTo(value);
     }
 
     /// <summary>
-    /// Отрицательный тест для <see cref="Check.NotEmpty{T}(IEnumerable{T}, string, string?)"/> на ArgumentNullException. 
+    /// Отрицательный тест для <see cref="Check.NotEmpty{T}(IEnumerable{T}, string, string?)"/> на ArgumentNullException.
     /// </summary>
     /// <param name="value">Коллекция.</param>
     /// <param name="parameterName">Наименование параметра.</param>
@@ -95,10 +95,10 @@ public sealed class CheckTest
     public void NotEmptyEnumerableArgumentNullExceptionTest(object[]? value, string parameterName, string message, string expected)
     {
         // act
-        var ex = Assert.Throws<ArgumentNullException>(() => Check.NotEmpty(value, parameterName, message));
+        var func = () => Check.NotEmpty(value, parameterName, message);
 
         // assert
-        Assert.That(ex!.Message, Is.EqualTo(expected));
+        func.Should().Throw<ArgumentNullException>().WithMessage(expected);
     }
 
     /// <summary>
@@ -116,10 +116,10 @@ public sealed class CheckTest
     public void NotEmptyEnumerableArgumentExceptionTest(object[]? value, string parameterName, string message, string expected)
     {
         // act
-        var ex = Assert.Throws<ArgumentException>(() => Check.NotEmpty(value, parameterName, message));
+        var func = () => Check.NotEmpty(value, parameterName, message);
 
         // assert
-        Assert.That(ex!.Message, Is.EqualTo(expected));
+        func.Should().Throw<ArgumentException>().WithMessage(expected);
     }
 
     /// <summary>
@@ -140,7 +140,7 @@ public sealed class CheckTest
         var result = Check.NotNull(value, nameof(value));
 
         // assert
-        Assert.That(result, Is.EqualTo(value));
+        result.Should().Be(value);
     }
 
     /// <summary>
@@ -159,10 +159,10 @@ public sealed class CheckTest
     public void NotNullNegativeTest(object? value, string parameterName, string message, string expected)
     {
         // act
-        var ex = Assert.Throws<ArgumentNullException>(() => Check.NotNull(value, parameterName, message));
+        var func = () => Check.NotNull(value, parameterName, message);
 
         // assert
-        Assert.That(ex!.Message, Is.EqualTo(expected));
+        func.Should().Throw<ArgumentNullException>().WithMessage(expected);
     }
 
     /// <summary>
@@ -174,13 +174,14 @@ public sealed class CheckTest
     [TestCase(2.1)]
     [TestCase('A')]
     [TestCase(23U)]
-    public void NotZeroPositiveTest<T>(T value) where T : struct
+    public void NotZeroPositiveTest<T>(T value)
+        where T : struct
     {
         // act
         var result = Check.NotZero(value, nameof(value));
 
         // assert
-        Assert.That(result, Is.EqualTo(value));
+        result.Should().Be(value);
     }
 
     /// <summary>
@@ -198,13 +199,14 @@ public sealed class CheckTest
     [TestCase(default(uint), "test parameter", " ", "Input parameter 'test parameter' is zero value.")]
     [TestCase(default(char), "test parameter", "\t", "Input parameter 'test parameter' is zero value.")]
     [TestCase(default(bool), "test parameter", "Test message.", "Test message.")]
-    public void NotZeroNegativeTest<T>(T value, string parameterName, string message, string expected) where T : struct
+    public void NotZeroNegativeTest<T>(T value, string parameterName, string message, string expected)
+        where T : struct
     {
         // act
-        var ex = Assert.Throws<ArgumentException>(() => Check.NotZero(value, parameterName, message));
+        var func = () => Check.NotZero(value, parameterName, message);
 
         // assert
-        Assert.That(ex!.Message, Is.EqualTo(expected));
+        func.Should().Throw<ArgumentException>().WithMessage(expected);
     }
 
     /// <summary>
@@ -222,7 +224,7 @@ public sealed class CheckTest
         var result = Check.FromInterval(value, nameof(value), min, max);
 
         // assert
-        Assert.That(result, Is.EqualTo(value));
+        result.Should().Be(value);
     }
 
     /// <summary>
@@ -240,9 +242,9 @@ public sealed class CheckTest
     public void FromIntervalNegativeTest(int min, int value, int max, string name, string expected)
     {
         // act
-        var ex = Assert.Throws<ArgumentException>(() => Check.FromInterval(value, name, min, max));
+        var func = () => Check.FromInterval(value, name, min, max);
 
         // assert
-        Assert.That(ex!.Message, Is.EqualTo(expected));
+        func.Should().Throw<ArgumentException>().WithMessage(expected);
     }
 }

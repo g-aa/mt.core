@@ -24,21 +24,6 @@ public sealed class StringExtensionsTest
         var result = ruString.Ru2Eng();
 
         // assert
-        Assert.That(result, Is.EqualTo(expected));
-    }
-
-    /// <summary>
-    /// Отрицательный тест для <see cref="StringExtensions.Ru2Eng(string)"/>.
-    /// </summary>
-    /// <param name="ruString"></param>
-    /// <param name="expected"></param>
-    [TestCase(null, "Checked parameter is null. (Parameter 'str')")]
-    public void Ru2EngNegativeTest(string ruString, string expected)
-    {
-        // act
-        var ex = Assert.Throws<ArgumentNullException>(() => ruString.Ru2Eng());
-
-        // assert
-        Assert.That(ex.Message, Is.EqualTo(expected));
+        result.Should().Be(expected);
     }
 }

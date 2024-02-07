@@ -10,7 +10,7 @@ namespace Mt.Utilities.Test;
 public sealed class MtExceptionTest
 {
     /// <summary>
-    /// Положительный тест для <see cref="MtException.MtException(ErrorCode, string)"/>.
+    /// Положительный тест для <see cref="MtException(ErrorCode, string)"/>.
     /// </summary>
     /// <param name="code">Код ошибки.</param>
     /// <param name="message">Сообщение.</param>
@@ -26,12 +26,9 @@ public sealed class MtExceptionTest
         var result = new MtException(code, message);
 
         // assert
-        Assert.Multiple(() =>
-        {
-            Assert.That(result.Code, Is.EqualTo(code));
-            Assert.That(result.Title, Is.EqualTo(code.Title()));
-            Assert.That(result.Desc, Is.EqualTo(expected));
-            Assert.That(result.Message, Is.EqualTo($"{code.Title()}: {expected}"));
-        });
+        result.Code.Should().Be(code);
+        result.Title.Should().Be(code.Title());
+        result.Desc.Should().Be(expected);
+        result.Message.Should().Be($"{code.Title()}: {expected}");
     }
 }
