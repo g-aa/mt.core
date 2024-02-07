@@ -4,7 +4,7 @@
 
 ## Перечень технологий
 
-netstandard2.1, net6.0,net8.0, SonarAnalyzer.CSharp, NUnit.
+netstandard2.1, net6.0, net8.0, SonarAnalyzer.CSharp, NUnit.
 
 ## [История изменения](CHANGELOG.md)
 
