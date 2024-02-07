@@ -37,10 +37,13 @@ public static class Check
     /// Проверка параметра на пустое значение или null.
     /// </summary>
     /// <typeparam name="T">Шаблон данных.</typeparam>
-    /// <param name="value">Значение строки.</param>
+    /// <param name="value">Значение параметра.</param>
     /// <param name="parameterName">Название параметра.</param>
-	/// <param name="message">Сообщение об ошибке.</param>
-	public static IEnumerable<T> NotEmpty<T>(IEnumerable<T>? value, [NotNull] string parameterName, string? message = null)
+    /// <param name="message">Сообщение об ошибке.</param>
+    /// <returns>Входной параметр.</returns>
+    /// <exception cref="ArgumentException">Входной параметр принимает пустое значение.</exception>
+    /// <exception cref="ArgumentNullException">Входной параметр принимает значение равное null.</exception>
+    public static IEnumerable<T> NotEmpty<T>(IEnumerable<T>? value, [NotNull] string parameterName, string? message = null)
     {
         if (value is null)
         {

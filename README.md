@@ -1,18 +1,18 @@
 # <p><img src="iconMt.png" width="64px" height="64px" align="middle"/> Mt Utilities</p>
 
-Универсальные утилиты используемые в проектах Mt Rele.
+Универсальные утилиты используемые в проектах Mt-Relay.
 
-## Перечень технологий (зависимости):
+## Перечень технологий
 
-netstandard2.1, SonarAnalyzer.CSharp, NUnit.
+netstandard2.1, net6.0,net8.0, SonarAnalyzer.CSharp, NUnit.
 
-## [История изменения.](CHANGELOG.md)
+## [История изменения](CHANGELOG.md)
 
-## Покрытие кода тестами:
+## Покрытие кода тестами
 
-Перед первым запуском ```.test.bat```, для просмотра покрытия кода тестами необходимо выполнить команду:
+Перед первым запуском `.test.bat`, для просмотра покрытия кода тестами необходимо выполнить команду:
 
-```dotnet tool list --global```
+`dotnet tool list --global`
 
 ```
 Идентификатор пакета                   Версия      Команды
@@ -21,9 +21,9 @@ dotnet-reportgenerator-globaltool      5.1.19      reportgenerator
 ```
 
 
-```dotnet tool install -g dotnet-reportgenerator-globaltool```
+`dotnet tool install -g dotnet-reportgenerator-globaltool`
 
-## Основной функционал пакета:
+## Основной функционал пакета
 
 | Компонент                               | Описание                                                            |
 |-----------------------------------------|---------------------------------------------------------------------|
@@ -35,7 +35,7 @@ dotnet-reportgenerator-globaltool      5.1.19      reportgenerator
 | Mt.Utilities.DefaultString              | Значение строк по умолчанию.                                        |
 | Mt.Utilities.StringFormat               | Форматы регулярных выражений основных сущностей.                    |
 
-## Статус коды исключений (коды ошибок):
+## Статус коды исключений
 
 | Код ошибки | Описание                                              | Http-статус код |
 |------------|-------------------------------------------------------|-----------------|

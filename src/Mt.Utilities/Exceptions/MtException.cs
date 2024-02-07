@@ -1,20 +1,12 @@
 using Mt.Utilities.Extensions;
-using System.Diagnostics.CodeAnalysis;
-using System.Runtime.Serialization;
 
 namespace Mt.Utilities.Exceptions;
 
 /// <summary>
 /// Исключение МТ.
 /// </summary>
-[Serializable]
 public class MtException : MtBaseException
 {
-    /// <summary>
-    /// Код ошибки.
-    /// </summary>
-    public ErrorCode Code { get; private set; }
-
     /// <summary>
     /// Инициализация нового экземпляра класса <see cref="MtException"/>.
     /// </summary>
@@ -24,7 +16,7 @@ public class MtException : MtBaseException
     public MtException(Exception? innerException, ErrorCode code, string? message)
         : base(innerException, code.Title(), string.IsNullOrWhiteSpace(message) ? code.Desc() : message)
     {
-        this.Code = code;
+        Code = code;
     }
 
     /// <summary>
@@ -46,9 +38,8 @@ public class MtException : MtBaseException
     {
     }
 
-    /// <inheritdoc />
-    protected MtException([NotNull] SerializationInfo info, StreamingContext context)
-        : base(info, context)
-    {
-    }
+    /// <summary>
+    /// Код ошибки.
+    /// </summary>
+    public ErrorCode Code { get; private set; }
 }

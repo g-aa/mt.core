@@ -1,6 +1,6 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>netstandard2.1</TargetFramework>
+    <TargetFrameworks>netstandard2.1;net6.0;net8.0</TargetFrameworks>
     <IsPackable>true</IsPackable>
     <PackageId>Mt.Utilities</PackageId>
     <PackageTags>Mt;Net;Utilities;</PackageTags>
@@ -8,6 +8,7 @@
     <AssemblyOriginatorKeyFile>$(MSBuildThisFileDirectory)mt-utilities.snk</AssemblyOriginatorKeyFile>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <UserSecretsId>3ad7db09-8c09-447a-91a5-7470ab9b618a</UserSecretsId>
   </PropertyGroup>
   <ItemGroup>
     <None Include="..\..\README.md" Pack="true" PackagePath="\" />
