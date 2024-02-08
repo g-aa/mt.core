@@ -1,3 +1,5 @@
+using System.Reflection;
+
 using Mt.Utilities.Exceptions;
 
 namespace Mt.Utilities.Extensions;
@@ -43,24 +45,13 @@ public static class ErrorCodeExtensions
     /// Получить атрибут кода ошибки.
     /// </summary>
     /// <typeparam name="T">Тип атрибута.</typeparam>
-    /// <param name="code">Код ошибки.</param>
+    /// <param name="enum">Перечисляемый тип.</param>
     /// <returns>Атрибут.</returns>
-    private static T? Attribute<T>(this ErrorCode code)
+    private static T? Attribute<T>(this Enum @enum)
         where T : Attribute
     {
-        var type = code.GetType();
-        var infos = type.GetMember(code.ToString());
-        if (infos is null || infos.Length != 1)
-        {
-            return default;
-        }
-
-        var attrs = infos.Single().GetCustomAttributes(typeof(T), false);
-        if (attrs is null || attrs.Length != 1)
-        {
-            return default;
-        }
-
-        return (T)attrs.Single();
+        var type = @enum.GetType();
+        var name = @enum.ToString();
+        return type.GetField(name)?.GetCustomAttribute<T>(false);
     }
 }
