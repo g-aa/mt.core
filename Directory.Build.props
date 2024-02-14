@@ -18,6 +18,10 @@
     <AssemblyVersion>$(Build_Number)</AssemblyVersion>
   </PropertyGroup>
   <ItemGroup>
+    <PackageReference Include="Gaa.DotNet.CodeAnalysis" Version="8.1.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
     <PackageReference Include="SonarAnalyzer.CSharp" Version="9.19.0.84025">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>

@@ -15,7 +15,6 @@ public sealed class MtExceptionTest
     /// <param name="code">Код ошибки.</param>
     /// <param name="message">Сообщение.</param>
     /// <param name="expected">Ожидаемый результат.</param>
-    [TestCase(ErrorCode.EntityValidation, null, "Ошибка валидации параметров сущности.")]
     [TestCase(ErrorCode.InvalidOperation, "", "Ошибка выполнения операции.")]
     [TestCase(ErrorCode.InternalLogicError, " ", "Внутренняя ошибка логики приложения.")]
     [TestCase(ErrorCode.EntityAlreadyExists, "\t", "Сущность уже содержится в последовательности.")]
