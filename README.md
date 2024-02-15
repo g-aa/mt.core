@@ -4,7 +4,7 @@
 
 ## Перечень технологий
 
-netstandard2.1, net6.0, net8.0, SonarAnalyzer.CSharp, NUnit.
+net8.0, SonarAnalyzer.CSharp, NUnit.
 
 ## [История изменения](CHANGELOG.md)
 
@@ -19,7 +19,6 @@ netstandard2.1, net6.0, net8.0, SonarAnalyzer.CSharp, NUnit.
 ------------------------------------------------------------------
 dotnet-reportgenerator-globaltool      5.1.19      reportgenerator
 ```
-
 
 `dotnet tool install -g dotnet-reportgenerator-globaltool`
 
