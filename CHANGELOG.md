@@ -6,6 +6,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ## [Unreleased]
 
+## [8.1.0] - 2024-02-15
+
+### Изменено
+
+- MT-0009: Обновление проекта;
+
 ## [8.0.0] - 2024-02-07
 
 ### Изменено
@@ -97,7 +103,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 - MT-0001: Добавление класса упрощеной проверки аргументов Check методы;
 - MT-0001: Добавление формата строк основного понятийного аппарата используемого в проектах Format;
 
-[Unreleased]: https://github.com/g-aa/mt-utilities/compare/release-v8.0.0...main
+[Unreleased]: https://github.com/g-aa/mt-utilities/compare/release-v8.1.0...main
+[8.1.0]: https://github.com/g-aa/mt-utilities/compare/release-v8.0.0...release-v8.1.0
 [8.0.0]: https://github.com/g-aa/mt-utilities/compare/release-v6.4.0...release-v8.0.0
 [6.4.0]: https://github.com/g-aa/mt-utilities/compare/release-v6.3.1...release-v6.4.0
 [6.3.1]: https://github.com/g-aa/mt-utilities/compare/release-v6.3.0...release-v6.3.1
