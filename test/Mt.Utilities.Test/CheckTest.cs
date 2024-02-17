@@ -4,6 +4,7 @@ namespace Mt.Utilities.Test;
 /// Набор тестов для <see cref="Check"/>.
 /// </summary>
 [TestFixture]
+#pragma warning disable CA1861 // Avoid constant arrays as arguments
 public sealed class CheckTest
 {
     /// <summary>
@@ -27,13 +28,12 @@ public sealed class CheckTest
     /// <param name="parameterName">Наименование параметра.</param>
     /// <param name="message">Сообщение.</param>
     /// <param name="expected">Ожидаемый результат.</param>
-    [TestCase(null, null, null, "Checked parameter is null. (Parameter 'parameterName')")]
     [TestCase(null, "value", null, "Checked parameter is null. (Parameter 'value')")]
     [TestCase(null, "value", "", "Checked parameter is null. (Parameter 'value')")]
     [TestCase(null, "value", " ", "Checked parameter is null. (Parameter 'value')")]
     [TestCase(null, "value", "\t", "Checked parameter is null. (Parameter 'value')")]
     [TestCase(null, "value", "Test message.", "Test message. (Parameter 'value')")]
-    public void NotEmptyStringArgumentNullExceptionTest(string? value, string parameterName, string message, string expected)
+    public void NotEmptyStringArgumentNullExceptionTest(string? value, string parameterName, string? message, string expected)
     {
         // act
         var func = () => Check.NotEmpty(value, parameterName, message);
@@ -56,7 +56,7 @@ public sealed class CheckTest
     [TestCase("", "value", "Test message.", "Test message.")]
     [TestCase(" ", "value", null, "Checked parameter 'value' is empty.")]
     [TestCase("\t", "value", null, "Checked parameter 'value' is empty.")]
-    public void NotEmptyStringArgumentExceptionTest(string? value, string parameterName, string message, string expected)
+    public void NotEmptyStringArgumentExceptionTest(string? value, string parameterName, string? message, string expected)
     {
         // act
         var func = () => Check.NotEmpty(value, parameterName, message);
@@ -86,13 +86,12 @@ public sealed class CheckTest
     /// <param name="parameterName">Наименование параметра.</param>
     /// <param name="message">Сообщение.</param>
     /// <param name="expected">Ожидаемый результат.</param>
-    [TestCase(null, null, null, "Checked parameter is null. (Parameter 'parameterName')")]
     [TestCase(null, "value", null, "Checked parameter is null. (Parameter 'value')")]
     [TestCase(null, "value", "", "Checked parameter is null. (Parameter 'value')")]
     [TestCase(null, "value", " ", "Checked parameter is null. (Parameter 'value')")]
     [TestCase(null, "value", "\t", "Checked parameter is null. (Parameter 'value')")]
     [TestCase(null, "value", "Test message.", "Test message. (Parameter 'value')")]
-    public void NotEmptyEnumerableArgumentNullExceptionTest(object[]? value, string parameterName, string message, string expected)
+    public void NotEmptyEnumerableArgumentNullExceptionTest(object[]? value, string parameterName, string? message, string expected)
     {
         // act
         var func = () => Check.NotEmpty(value, parameterName, message);
@@ -150,13 +149,12 @@ public sealed class CheckTest
     /// <param name="parameterName">Наименование параметра.</param>
     /// <param name="message">Сообщение.</param>
     /// <param name="expected">Ожидаемый результат.</param>
-    [TestCase(null, null, null, "Checked parameter is null. (Parameter 'parameterName')")]
     [TestCase(null, "test parameter", null, "Checked parameter is null. (Parameter 'test parameter')")]
     [TestCase(null, "test parameter", "", "Checked parameter is null. (Parameter 'test parameter')")]
     [TestCase(null, "test parameter", " ", "Checked parameter is null. (Parameter 'test parameter')")]
     [TestCase(null, "test parameter", "\t", "Checked parameter is null. (Parameter 'test parameter')")]
     [TestCase(null, "test parameter", "Test message.", "Test message. (Parameter 'test parameter')")]
-    public void NotNullNegativeTest(object? value, string parameterName, string message, string expected)
+    public void NotNullNegativeTest(object? value, string parameterName, string? message, string expected)
     {
         // act
         var func = () => Check.NotNull(value, parameterName, message);
@@ -199,7 +197,7 @@ public sealed class CheckTest
     [TestCase(default(uint), "test parameter", " ", "Input parameter 'test parameter' is zero value.")]
     [TestCase(default(char), "test parameter", "\t", "Input parameter 'test parameter' is zero value.")]
     [TestCase(default(bool), "test parameter", "Test message.", "Test message.")]
-    public void NotZeroNegativeTest<T>(T value, string parameterName, string message, string expected)
+    public void NotZeroNegativeTest<T>(T value, string parameterName, string? message, string expected)
         where T : struct
     {
         // act

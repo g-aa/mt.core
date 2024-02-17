@@ -4,15 +4,17 @@
 
 ## Перечень технологий
 
-netstandard2.1, net6.0, net8.0, SonarAnalyzer.CSharp, NUnit.
+net8.0, SonarAnalyzer.CSharp, NUnit.
 
 ## [История изменения](CHANGELOG.md)
 
 ## Покрытие кода тестами
 
-Перед первым запуском `.test.bat`, для просмотра покрытия кода тестами необходимо выполнить команду:
+Перед первым запуском `.test.bat`, для просмотра покрытия кода тестами проверьте наличие `dotnet-reportgenerator-globaltool` выполнив команду:
 
 `dotnet tool list --global`
+
+в перечне пакетов должен присутствовать необходимый пакет:
 
 ```
 Идентификатор пакета                   Версия      Команды
@@ -20,6 +22,7 @@ netstandard2.1, net6.0, net8.0, SonarAnalyzer.CSharp, NUnit.
 dotnet-reportgenerator-globaltool      5.1.19      reportgenerator
 ```
 
+при его отсутствии необходимо выполнить команду:
 
 `dotnet tool install -g dotnet-reportgenerator-globaltool`
 
