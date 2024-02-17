@@ -59,13 +59,13 @@ public static class StringExtensions
         Array.ForEach(str.ToCharArray(), (char ch) =>
         {
             var index = char.ToLowerInvariant(ch);
-            if (!_alphabet.ContainsKey(index))
+            if (!_alphabet.TryGetValue(index, out var value))
             {
                 result.Append(ch);
             }
             else
             {
-                result.Append(char.IsUpper(ch) ? _alphabet[index].ToUpperInvariant() : _alphabet[index]);
+                result.Append(char.IsUpper(ch) ? value.ToUpperInvariant() : value);
             }
         });
 

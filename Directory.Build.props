@@ -10,7 +10,7 @@
     <PackageProjectUrl>https://github.com/g-aa/mt-utilities</PackageProjectUrl>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageIcon>iconMt.png</PackageIcon>
-    <Build_Version Condition=" '$(Build_Version)' == '' ">8.0.0</Build_Version>
+    <Build_Version Condition=" '$(Build_Version)' == '' ">8.1.0</Build_Version>
     <Build_Number Condition=" '$(Build_Number)' == '' ">$(Build_Version).0</Build_Number>
     <Version>$(Build_Version)</Version>
     <PackageVersion>$(Build_Version)</PackageVersion>
@@ -18,6 +18,10 @@
     <AssemblyVersion>$(Build_Number)</AssemblyVersion>
   </PropertyGroup>
   <ItemGroup>
+    <PackageReference Include="Gaa.DotNet.CodeAnalysis" Version="8.1.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
     <PackageReference Include="SonarAnalyzer.CSharp" Version="9.19.0.84025">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
