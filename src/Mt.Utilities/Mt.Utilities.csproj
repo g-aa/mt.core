@@ -1,13 +1,16 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFrameworks>net8.0</TargetFrameworks>
+    <TargetFramework>net8.0</TargetFramework>
+    <Description>Универсальные утилиты используемые в проектах Mt Relay.</Description>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <IsPackable>true</IsPackable>
     <PackageId>Mt.Utilities</PackageId>
-    <PackageTags>Mt;Net;Utilities;</PackageTags>
-    <Description>Универсальные утилиты используемые в проектах Mt Relay.</Description>
-    <AssemblyOriginatorKeyFile>$(MSBuildThisFileDirectory)mt-utilities.snk</AssemblyOriginatorKeyFile>
+    <PackageTags>Mt;Net;Utilities</PackageTags>
+    <PackageProjectUrl>https://github.com/g-aa/mt-utilities</PackageProjectUrl>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageIcon>iconMt.png</PackageIcon>
+    <PackageVersion>$(Build_Version)</PackageVersion>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <GenerateDocumentationFile>true</GenerateDocumentationFile>
   </PropertyGroup>
   <ItemGroup>
     <None Include="..\..\README.md" Pack="true" PackagePath="\" />
