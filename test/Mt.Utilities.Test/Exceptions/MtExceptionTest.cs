@@ -1,7 +1,7 @@
 using Mt.Utilities.Exceptions;
 using Mt.Utilities.Extensions;
 
-namespace Mt.Utilities.Test;
+namespace Mt.Utilities.Test.Exceptions;
 
 /// <summary>
 /// Набор тестов для <see cref="MtException"/>.

@@ -3,14 +3,14 @@ using System.Text;
 namespace Mt.Utilities.Extensions;
 
 /// <summary>
-/// Расширения стандартного функционала класса string.
+/// Методы расширения для <see cref="string"/>.
 /// </summary>
 public static class StringExtensions
 {
     /// <summary>
     /// Алфавит транслитерации: ISO 9:1995, ГОСТ 7.79-2000 (Система Б).
     /// </summary>
-    private static readonly Dictionary<char, string> _alphabet = new Dictionary<char, string>()
+    private static readonly Dictionary<char, string> _alphabet = new()
     {
         { 'а', "a" },
         { 'б', "b" },
@@ -50,9 +50,9 @@ public static class StringExtensions
     /// <summary>
     /// Транслитерация с русского языка на английский язык.
     /// </summary>
+    /// <remarks>ISO 9:1995, ГОСТ 7.79-2000 (Система Б).</remarks>
     /// <param name="str">Входная строка на русском языке.</param>
     /// <returns>Результирующая строка на английском языке.</returns>
-    /// <remarks>ISO 9:1995, ГОСТ 7.79-2000 (Система Б).</remarks>
     public static string Ru2Eng(this string str)
     {
         var result = new StringBuilder();
