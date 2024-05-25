@@ -1,6 +1,6 @@
 using Mt.Utilities.Extensions;
 
-namespace Mt.Utilities.Test;
+namespace Mt.Utilities.Test.Extensions;
 
 /// <summary>
 /// Набор тестов для <see cref="StringExtensions"/>.

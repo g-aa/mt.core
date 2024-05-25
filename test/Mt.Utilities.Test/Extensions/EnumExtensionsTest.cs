@@ -1,39 +1,16 @@
 using Mt.Utilities.Exceptions;
 using Mt.Utilities.Extensions;
 
-namespace Mt.Utilities.Test;
+namespace Mt.Utilities.Test.Extensions;
 
 /// <summary>
-/// Набор тестов для <see cref="ErrorCodeExtensions"/>.
+/// Набор тестов для <see cref="EnumExtensions"/>.
 /// </summary>
 [TestFixture]
-public sealed class ErrorCodeTest
+public sealed class EnumExtensionsTest
 {
     /// <summary>
-    /// Положительный тест для <see cref="ErrorCodeExtensions.Title(ErrorCode)"/>.
-    /// </summary>
-    /// <param name="code">Код ошибки.</param>
-    /// <param name="expected">Ожидаемый результат.</param>
-    [TestCase(ErrorCode.InternalServerError, "MT-E0000")]
-    [TestCase(ErrorCode.InternalLogicError, "MT-E0001")]
-    [TestCase(ErrorCode.InvalidOperation, "MT-E0002")]
-    [TestCase(ErrorCode.Unauthorized, "MT-E0003")]
-    [TestCase(ErrorCode.EntityValidation, "MT-E0010")]
-    [TestCase(ErrorCode.EntityNotFound, "MT-E0011")]
-    [TestCase(ErrorCode.EntityAlreadyExists, "MT-E0012")]
-    [TestCase(ErrorCode.EntityCannotBeDeleted, "MT-E0013")]
-    [TestCase(ErrorCode.EntityCannotBeModified, "MT-E0014")]
-    public void TitlePositiveTest(ErrorCode code, string expected)
-    {
-        // act
-        var result = code.Title();
-
-        // assert
-        result.Should().Be(expected);
-    }
-
-    /// <summary>
-    /// Положительный тест для <see cref="ErrorCodeExtensions.Desc(ErrorCode)"/>.
+    /// Положительный тест для <see cref="EnumExtensions.Desc(Enum)"/>.
     /// </summary>
     /// <param name="code">Код ошибки.</param>
     /// <param name="expected">Ожидаемый результат.</param>
@@ -56,7 +33,30 @@ public sealed class ErrorCodeTest
     }
 
     /// <summary>
-    /// Положительный тест для <see cref="ErrorCodeExtensions.HttpStatusCode(ErrorCode)"/>.
+    /// Положительный тест для <see cref="EnumExtensions.Title(ErrorCode)"/>.
+    /// </summary>
+    /// <param name="code">Код ошибки.</param>
+    /// <param name="expected">Ожидаемый результат.</param>
+    [TestCase(ErrorCode.InternalServerError, "MT-E0000")]
+    [TestCase(ErrorCode.InternalLogicError, "MT-E0001")]
+    [TestCase(ErrorCode.InvalidOperation, "MT-E0002")]
+    [TestCase(ErrorCode.Unauthorized, "MT-E0003")]
+    [TestCase(ErrorCode.EntityValidation, "MT-E0010")]
+    [TestCase(ErrorCode.EntityNotFound, "MT-E0011")]
+    [TestCase(ErrorCode.EntityAlreadyExists, "MT-E0012")]
+    [TestCase(ErrorCode.EntityCannotBeDeleted, "MT-E0013")]
+    [TestCase(ErrorCode.EntityCannotBeModified, "MT-E0014")]
+    public void TitlePositiveTest(ErrorCode code, string expected)
+    {
+        // act
+        var result = code.Title();
+
+        // assert
+        result.Should().Be(expected);
+    }
+
+    /// <summary>
+    /// Положительный тест для <see cref="EnumExtensions.HttpStatusCode(ErrorCode)"/>.
     /// </summary>
     /// <param name="code">Код ошибки.</param>
     /// <param name="expected">Ожидаемый результат.</param>

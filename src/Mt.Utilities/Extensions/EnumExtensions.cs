@@ -1,3 +1,4 @@
+using System.ComponentModel;
 using System.Reflection;
 
 using Mt.Utilities.Exceptions;
@@ -5,10 +6,22 @@ using Mt.Utilities.Exceptions;
 namespace Mt.Utilities.Extensions;
 
 /// <summary>
-/// Методы расширения для кодов ошибок.
+/// Методы расширения для <see cref="Enum"/>.
 /// </summary>
-public static class ErrorCodeExtensions
+public static class EnumExtensions
 {
+    /// <summary>
+    /// Получить описание значения перечисляемого типа.
+    /// </summary>
+    /// <remarks>Описание берется из атрибута <see cref="DescriptionAttribute"/> и его производных классах.</remarks>
+    /// <param name="enum">Перечисляемый тип.</param>
+    /// <returns>Сообщение.</returns>
+    public static string Desc(this Enum @enum)
+    {
+        var attr = @enum.Attribute<DescriptionAttribute>();
+        return attr is null ? @enum.ToString() : attr.Description;
+    }
+
     /// <summary>
     /// Получить текстовый заголовок кода ошибки.
     /// </summary>
@@ -17,17 +30,6 @@ public static class ErrorCodeExtensions
     public static string Title(this ErrorCode code)
     {
         return $"MT-E{(int)code:D4}";
-    }
-
-    /// <summary>
-    /// Получить описание кода ошибки.
-    /// </summary>
-    /// <param name="code">Код ошибки.</param>
-    /// <returns>Текстовое описание.</returns>
-    public static string Desc(this ErrorCode code)
-    {
-        var attr = Attribute<ErrorCodeDescriptionAttribute>(code);
-        return attr is null ? code.ToString() : attr.Description;
     }
 
     /// <summary>
@@ -47,7 +49,7 @@ public static class ErrorCodeExtensions
     /// <typeparam name="T">Тип атрибута.</typeparam>
     /// <param name="enum">Перечисляемый тип.</param>
     /// <returns>Атрибут.</returns>
-    private static T? Attribute<T>(this Enum @enum)
+    public static T? Attribute<T>(this Enum @enum)
         where T : Attribute
     {
         var type = @enum.GetType();
