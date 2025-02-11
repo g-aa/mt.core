@@ -28,8 +28,10 @@ dotnet tool install -g dotnet-reportgenerator-globaltool
 
 ## Основной функционал
 
-| Компонент      | Описание                                               |
-|----------------|--------------------------------------------------------|
-| [Mt.Utilities] | Универсальные утилиты используемые в проектах Mt-Relay |
+| Компонент                  | Описание                                               |
+|----------------------------|--------------------------------------------------------|
+| [Mt.Entities.Abstractions] | Абстракции сущностей используемых в Мt-Relay           |
+| [Mt.Utilities]             | Универсальные утилиты используемые в проектах Mt-Relay |
 
+[Mt.Entities.Abstractions]: src/Mt.Entities.Abstractions/README.md
 [Mt.Utilities]: src/Mt.Utilities/README.md
