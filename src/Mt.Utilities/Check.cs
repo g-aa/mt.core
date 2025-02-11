@@ -13,7 +13,7 @@ public static class Check
     /// <param name="value">Значение строки.</param>
     /// <param name="parameterName">Название параметра.</param>
     /// <param name="message">Сообщение об ошибке.</param>
-    /// <returns>Входная строкаы.</returns>
+    /// <returns>Входная строка.</returns>
     /// <exception cref="ArgumentException">Строка принимает пустое значение.</exception>
     /// <exception cref="ArgumentNullException">Строка принимает значение равное null.</exception>
     public static string NotEmpty(string? value, [NotNull] string parameterName, string? message = null)
@@ -110,7 +110,7 @@ public static class Check
     /// <param name="minValue">Минимальное значение.</param>
     /// <param name="maxValue">Максимальное значение.</param>
     /// <returns>Входной параметр.</returns>
-    /// <exception cref="ArgumentException">При неверном задении интервала.</exception>
+    /// <exception cref="ArgumentException">При неверном задании интервала.</exception>
     public static int FromInterval(int value, [NotNull] string parameterName, int minValue, int maxValue)
     {
         if ((long)maxValue - minValue <= 0)
