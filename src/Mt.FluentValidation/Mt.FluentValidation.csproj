@@ -1,14 +1,14 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
-    <Description>Абстракции сущностей используемые в проектах Mt Relay.</Description>
+    <Description>Методы расширения для FluentValidation используемые в проектах Mt Relay.</Description>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <IsPackable>true</IsPackable>
-    <Title>Mt Entities Abstractions</Title>
-    <PackageId>Mt.Entities.Abstractions</PackageId>
-    <PackageTags>Mt;Net;Entities</PackageTags>
+    <Title>Mt FluentValidation</Title>
+    <PackageId>Mt.FluentValidation</PackageId>
+    <PackageTags>Mt;Net;FluentValidation</PackageTags>
     <PackageProjectUrl>https://github.com/g-aa/mt-core</PackageProjectUrl>
-    <PackageIcon>iconMt.png</PackageIcon>
+    <PackageIcon>iconFV.png</PackageIcon>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageVersion>$(Build_Version)</PackageVersion>
     <PackageReleaseNotes>Updating the project</PackageReleaseNotes>
@@ -18,10 +18,11 @@
     <EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
   </PropertyGroup>
   <ItemGroup>
-    <None Include="../../iconMt.png" Pack="true" PackagePath="/" />
+    <None Include="../../iconFV.png" Pack="true" PackagePath="/" />
     <None Include="README.md" Pack="true" PackagePath="/" />
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="FluentValidation" />
     <PackageReference Include="Gaa.DotNet.CodeAnalysis">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
@@ -33,5 +34,9 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="../Mt.Utilities/Mt.Utilities.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Using Include="FluentValidation" />
+    <Using Include="Mt.Utilities" />
   </ItemGroup>
 </Project>

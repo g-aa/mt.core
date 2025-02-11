@@ -28,12 +28,14 @@ dotnet tool install -g dotnet-reportgenerator-globaltool
 
 ## Основной функционал
 
-| Компонент                  | Описание                                |
-|----------------------------|-----------------------------------------|
-| [Mt.Entities.Abstractions] | Абстракции сущностей                    |
-| [Mt.Results]                 | Стандартные ответы результатов операций |
-| [Mt.Utilities]             | Универсальные утилиты                   |
+| Компонент                  | Описание                                               |
+|----------------------------|--------------------------------------------------------|
+| [Mt.Entities.Abstractions] | Абстракции сущностей                                   |
+| [Mt.FluentValidation]      | Шаблонов валидации на основе пакета `FluentValidation` |
+| [Mt.Results]               | Стандартные ответы результатов операций                |
+| [Mt.Utilities]             | Универсальные утилиты                                  |
 
 [Mt.Entities.Abstractions]: src/Mt.Entities.Abstractions/README.md
+[Mt.FluentValidation]: src/Mt.FluentValidation/README.md
 [Mt.Results]: src/Mt.Results/README.md
 [Mt.Utilities]: src/Mt.Utilities/README.md

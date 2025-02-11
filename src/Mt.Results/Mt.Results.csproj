@@ -22,9 +22,6 @@
     <None Include="README.md" Pack="true" PackagePath="/" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="../Mt.Utilities/Mt.Utilities.csproj" />
-  </ItemGroup>
-  <ItemGroup>
     <PackageReference Include="Gaa.DotNet.CodeAnalysis">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
@@ -33,5 +30,8 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="../Mt.Utilities/Mt.Utilities.csproj" />
   </ItemGroup>
 </Project>
