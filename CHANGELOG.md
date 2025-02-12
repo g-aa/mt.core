@@ -6,8 +6,18 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ## [Unreleased]
 
+## [8.3.0] - 2025-02-12
+
+### Добавлено
+
+- MT-0009: Перенос проекта `Mt.FluentValidation`.
+- MT-0009: Перенос проекта `Mt.Results`.
+- MT-0009: Перенос проекта `Mt.Entities.Abstractions`.
 - MT-0009: Добавление файла `Directory.Packages.props`.
-- MT-0009: Обобщение репозитория до `mt-core`.
+
+### Изменено
+
+ - MT-0009: Обобщение репозитория до `mt-core`.
 
 ## [8.2.0] - 2024-05-24
 
@@ -118,7 +128,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 - MT-0001: Добавление класса упрощенной проверки аргументов Check методы.
 - MT-0001: Добавление формата строк основного понятийного аппарата используемого в проектах Format.
 
-[Unreleased]: https://github.com/g-aa/mt-utilities/compare/v8.2.0...master
+[Unreleased]: https://github.com/g-aa/mt-utilities/compare/v8.3.0...master
+[8.3.0]: https://github.com/g-aa/mt-utilities/compare/v8.2.0...v8.3.0
 [8.2.0]: https://github.com/g-aa/mt-utilities/compare/v8.1.1...v8.2.0
 [8.1.1]: https://github.com/g-aa/mt-utilities/compare/v8.1.0...v8.1.1
 [8.1.0]: https://github.com/g-aa/mt-utilities/compare/v8.0.0...v8.1.0
