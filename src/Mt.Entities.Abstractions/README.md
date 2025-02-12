@@ -1,4 +1,4 @@
-# <p><img src="../../iconMt.png" width="64px" height="64px" align="middle" /> Mt Entities abstractions</p>
+# Mt Entities abstractions
 
 Абстракции сущностей используемых в Мt-Relay.
 

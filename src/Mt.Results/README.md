@@ -1,4 +1,4 @@
-# <p><img src="../../iconMt.png" width="64px" height="64px" align="middle" /> Mt Results</p>
+# Mt Results
 
 Стандартные ответы результатов операций используемые в проектах Mt-Relay.
 

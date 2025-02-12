@@ -1,4 +1,4 @@
-# <p><img src="../../iconMt.png" width="64px" height="64px" align="middle" /> <img src="../../iconFV.png" width="64px" height="64px" align="middle" />  Mt Validation</p>
+# Mt Validation
 
 Набор базовых шаблонов валидации на основе пакета `FluentValidation` для проектов Mt-Relay.
 
