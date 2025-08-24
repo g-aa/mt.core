@@ -5,7 +5,9 @@ VisualStudioVersion = 17.2.32630.192
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "misc", "misc", "{78CB6E8D-FE11-4E8D-AE99-D1AF8212D028}"
 	ProjectSection(SolutionItems) = preProject
+		.drone.yml = .drone.yml
 		.editorconfig = .editorconfig
+		.gitattributes = .gitattributes
 		.gitignore = .gitignore
 		.tag.sh = .tag.sh
 		.test.sh = .test.sh
@@ -17,6 +19,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "misc", "misc", "{78CB6E8D-F
 		iconMt.png = iconMt.png
 		iconNet.png = iconNet.png
 		README.md = README.md
+		TODO = TODO
 	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mt.Utilities", "src\Mt.Utilities\Mt.Utilities.csproj", "{2B72A799-F55E-473E-9BC3-1AB7A7C86AAF}"
