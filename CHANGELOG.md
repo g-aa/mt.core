@@ -6,6 +6,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ## [Unreleased]
 
+## [8.5.1] - 2025-08-25
+
+### Изменено
+
+- MT-0009: Корректировка `.drone.yml`.
+
 ## [8.5.0] - 2025-08-24
 
 ### Добавлено
@@ -142,19 +148,20 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 - MT-0001: Добавление класса упрощенной проверки аргументов Check методы.
 - MT-0001: Добавление формата строк основного понятийного аппарата используемого в проектах Format.
 
-[Unreleased]: https://github.com/g-aa/mt-utilities/compare/v8.5.0...master
-[8.5.0]: https://github.com/g-aa/mt-utilities/compare/v8.4.0...v8.5.0
-[8.4.0]: https://github.com/g-aa/mt-utilities/compare/v8.3.0...v8.4.0
-[8.3.0]: https://github.com/g-aa/mt-utilities/compare/v8.2.0...v8.3.0
-[8.2.0]: https://github.com/g-aa/mt-utilities/compare/v8.1.1...v8.2.0
-[8.1.1]: https://github.com/g-aa/mt-utilities/compare/v8.1.0...v8.1.1
-[8.1.0]: https://github.com/g-aa/mt-utilities/compare/v8.0.0...v8.1.0
-[8.0.0]: https://github.com/g-aa/mt-utilities/compare/v6.4.0...v8.0.0
-[6.4.0]: https://github.com/g-aa/mt-utilities/compare/v6.3.1...v6.4.0
-[6.3.1]: https://github.com/g-aa/mt-utilities/compare/v6.3.0...v6.3.1
-[6.3.0]: https://github.com/g-aa/mt-utilities/compare/v6.2.0...v6.3.0
-[6.2.0]: https://github.com/g-aa/mt-utilities/compare/v6.1.1...v6.2.0
-[6.1.1]: https://github.com/g-aa/mt-utilities/compare/v6.1.0...v6.1.1
-[6.1.0]: https://github.com/g-aa/mt-utilities/compare/v6.0.1...v6.1.0
-[6.0.1]: https://github.com/g-aa/mt-utilities/compare/v6.0.0...v6.0.1
-[6.0.0]: https://github.com/g-aa/mt-utilities/releases/tag/v6.0.0
+[Unreleased]: https://github.com/g-aa/mt.core/compare/v8.5.1...master
+[8.5.1]: https://github.com/g-aa/mt.core/compare/v8.5.0...v8.5.1
+[8.5.0]: https://github.com/g-aa/mt.core/compare/v8.4.0...v8.5.0
+[8.4.0]: https://github.com/g-aa/mt.core/compare/v8.3.0...v8.4.0
+[8.3.0]: https://github.com/g-aa/mt.core/compare/v8.2.0...v8.3.0
+[8.2.0]: https://github.com/g-aa/mt.core/compare/v8.1.1...v8.2.0
+[8.1.1]: https://github.com/g-aa/mt.core/compare/v8.1.0...v8.1.1
+[8.1.0]: https://github.com/g-aa/mt.core/compare/v8.0.0...v8.1.0
+[8.0.0]: https://github.com/g-aa/mt.core/compare/v6.4.0...v8.0.0
+[6.4.0]: https://github.com/g-aa/mt.core/compare/v6.3.1...v6.4.0
+[6.3.1]: https://github.com/g-aa/mt.core/compare/v6.3.0...v6.3.1
+[6.3.0]: https://github.com/g-aa/mt.core/compare/v6.2.0...v6.3.0
+[6.2.0]: https://github.com/g-aa/mt.core/compare/v6.1.1...v6.2.0
+[6.1.1]: https://github.com/g-aa/mt.core/compare/v6.1.0...v6.1.1
+[6.1.0]: https://github.com/g-aa/mt.core/compare/v6.0.1...v6.1.0
+[6.0.1]: https://github.com/g-aa/mt.core/compare/v6.0.0...v6.0.1
+[6.0.0]: https://github.com/g-aa/mt.core/releases/tag/v6.0.0

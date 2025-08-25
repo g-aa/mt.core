@@ -49,8 +49,8 @@ steps:
   - |
     for package in ./packages/*.symbols.nupkg
     do
-      echo Pushing $package to $NUGET_LOCAL_URI_INTERNAL
-      dotnet nuget push $package --source $NUGET_LOCAL_URI_INTERNAL
+      echo Pushing $package to $NUGET_LOCAL_URI_MT
+      dotnet nuget push $package --source $NUGET_LOCAL_URI_MT
     done
   depends_on:
   - pack
